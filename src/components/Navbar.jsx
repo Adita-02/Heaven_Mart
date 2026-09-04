@@ -6,32 +6,35 @@ export default function Navbar({ isMobileOpen, onToggleMobile }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 30);
+
+      const header = document.getElementById('siteHeader');
+      const headerMidY = header
+        ? header.getBoundingClientRect().top + header.getBoundingClientRect().height / 2
+        : 45;
+
+      const darkElements = document.querySelectorAll(
+        '.showroom-section, .timeline-section, .final-cta-section, .site-footer'
+      );
+
+      let overDark = false;
+      for (let i = 0; i < darkElements.length; i++) {
+        const rect = darkElements[i].getBoundingClientRect();
+        if (rect.top <= headerMidY && rect.bottom >= headerMidY) {
+          overDark = true;
+          break;
+        }
+      }
+      setIsOverDark(overDark);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
     handleScroll();
-
-    const darkElements = document.querySelectorAll(
-      '.showroom-section, .timeline-section, .final-cta-section, .site-footer'
-    );
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const anyDarkIntersecting = entries.some((e) => e.isIntersecting);
-        setIsOverDark(anyDarkIntersecting);
-      },
-      {
-        rootMargin: '-60px 0px -85% 0px',
-        threshold: 0,
-      }
-    );
-
-    darkElements.forEach((el) => observer.observe(el));
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      observer.disconnect();
+      window.removeEventListener('resize', handleScroll);
     };
   }, []);
 

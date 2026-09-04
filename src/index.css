@@ -2258,10 +2258,11 @@ h1, h2, h3, h4, .serif-title {
        ========================================================================== */
     .reveal {
       opacity: 0;
-      transform: translateY(18px);
+      transform: translateY(28px);
       transition:
-        opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
     }
 
     .reveal.is-visible {
@@ -2270,27 +2271,27 @@ h1, h2, h3, h4, .serif-title {
     }
 
     .reveal-delay-1 {
-      transition-delay: 0.08s;
+      transition-delay: 0.1s;
     }
 
     .reveal-delay-2 {
-      transition-delay: 0.16s;
+      transition-delay: 0.2s;
     }
 
     .reveal-delay-3 {
-      transition-delay: 0.24s;
+      transition-delay: 0.3s;
     }
 
     .reveal-delay-4 {
-      transition-delay: 0.32s;
-    }
-
-    .reveal-delay-5 {
       transition-delay: 0.4s;
     }
 
+    .reveal-delay-5 {
+      transition-delay: 0.5s;
+    }
+
     .reveal-delay-6 {
-      transition-delay: 0.48s;
+      transition-delay: 0.6s;
     }
 
     @media (prefers-reduced-motion: reduce) {

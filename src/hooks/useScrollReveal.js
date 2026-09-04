@@ -11,25 +11,11 @@ import { useEffect, useRef, useState } from 'react';
  */
 export function useScrollReveal(options = {}) {
   const ref = useRef(null);
-
-  // Check reduced-motion preference or absence of IntersectionObserver
-  const [isVisible, setIsVisible] = useState(() => {
-    if (typeof window === 'undefined') return true;
-    if (!('IntersectionObserver' in window)) return true;
-    if (
-      window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    ) {
-      return true;
-    }
-    return false;
-  });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (isVisible) return;
-
-    // Double-check reduced motion preference
     if (
+      typeof window !== 'undefined' &&
       window.matchMedia &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
@@ -39,6 +25,13 @@ export function useScrollReveal(options = {}) {
 
     const node = ref.current;
     if (!node) return;
+
+    // Check if element is already within viewport on initial load
+    const rect = node.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) {
+      setIsVisible(true);
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -50,7 +43,6 @@ export function useScrollReveal(options = {}) {
       {
         threshold: options.threshold ?? 0.08,
         rootMargin: options.rootMargin ?? '0px 0px -40px 0px',
-        ...options,
       }
     );
 
@@ -59,7 +51,7 @@ export function useScrollReveal(options = {}) {
     return () => {
       observer.disconnect();
     };
-  }, [isVisible, options]);
+  }, []);
 
   return [ref, isVisible];
 }
