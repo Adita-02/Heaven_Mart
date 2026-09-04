@@ -1,0 +1,3304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven Furniture Mart | Bespoke Luxury Furniture · Chattogram</title>
+  <meta name="description" content="Heaven Furniture Mart creates organic, bespoke luxury furniture in Agrabad, Chattogram. Designed around your space, taste, and lifestyle.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Heaven Furniture Mart | Bespoke Luxury Furniture">
+  <meta property="og:description" content="Where luxury meets comfort. Handcrafted bespoke furniture tailored for discerning spaces in Agrabad, Chattogram.">
+  <meta property="og:image" content="images/hero_earthy_lounge.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 fill=%22%23cca468%22>H</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. BRAND LUXURY PALETTE (SAGE, OLIVE, WARM GOLD, SAND CREAM, WALNUT)
+       ========================================================================== */
+    :root {
+      --bg-cream: #E8E1D5;
+      --bg-cream-light: #EAE3D8;
+      --bg-cream-card: #F2ECE1;
+      --bg-cream-alt: #E4DDD1;
+      
+      --sage-green: #7E8B78;
+      --sage-green-light: #9BA696;
+      --sage-green-dark: #636F5D;
+      --sage-subtle: rgba(126, 139, 120, 0.18);
+      
+      --deep-olive: #4A5040;
+      --deep-olive-dark: #373C30;
+      --deep-olive-card: #565C4B;
+      
+      --walnut-brown: #76563C;
+      --terracotta-accent: #9E5A38;
+      --walnut-light: #8E6B4E;
+      --walnut-subtle: rgba(118, 86, 60, 0.15);
+      
+      --brand-gold: #CCA468;
+      --brand-gold-hover: #BA9255;
+      --brand-gold-dark: #A67E42;
+      --brand-gold-subtle: rgba(204, 164, 104, 0.18);
+      --brand-gold-glow: rgba(204, 164, 104, 0.32);
+      --brand-btn-text: #1C1917;
+      
+      --taupe-stone: #B8AD9E;
+      --border-taupe: rgba(184, 173, 158, 0.45);
+      --border-olive: rgba(232, 225, 213, 0.2);
+      
+      --text-charcoal: #34342F;
+      --text-charcoal-muted: #5C5C55;
+      --text-cream: #E8E1D5;
+      --text-cream-muted: #CFC7BB;
+      
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-script: 'Caveat', cursive, serif;
+      
+      --container-max: 1200px;
+      --nav-height: 64px;
+      --tr-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --tr-fast: all 0.2s ease;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-cream);
+      color: var(--text-charcoal);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-weight: 400;
+      line-height: 1.7;
+      overflow-x: hidden;
+      background-color: var(--bg-cream);
+      color: var(--text-charcoal);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--tr-fast);
+    }
+
+    button {
+      font-family: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    ul, ol { list-style: none; }
+
+    ::selection {
+      background: var(--brand-gold);
+      color: var(--brand-btn-text);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: clamp(1.25rem, 4vw, 2.5rem);
+      padding-right: clamp(1.25rem, 4vw, 2.5rem);
+    }
+
+    /* Standardized Typography */
+    h1, h2, h3, h4, .serif-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      color: var(--text-charcoal);
+    }
+
+    .eyebrow {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--walnut-brown);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.85rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 20px;
+      height: 1px;
+      background-color: var(--walnut-brown);
+      opacity: 0.7;
+    }
+
+    .eyebrow-dark {
+      color: var(--brand-gold);
+    }
+    .eyebrow-dark::before {
+      background-color: var(--brand-gold);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.85rem);
+      color: var(--text-charcoal);
+      margin-bottom: 1.15rem;
+      line-height: 1.15;
+    }
+
+    .section-title-dark {
+      color: var(--text-cream);
+    }
+
+    .lead-copy, p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-charcoal-muted);
+      font-weight: 400;
+    }
+
+    .lead-copy-dark {
+      color: var(--text-cream-muted);
+    }
+
+    /* Classy Warm Gold Pill Buttons */
+    .btn-olive, .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0.85rem 1.85rem;
+      background-color: var(--brand-gold);
+      color: var(--brand-btn-text);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--brand-gold);
+      border-radius: 9999px;
+      box-shadow: 0 6px 20px var(--brand-gold-glow);
+      transition: var(--tr-smooth);
+      cursor: pointer;
+    }
+
+    .btn-olive:hover, .btn-gold:hover {
+      background-color: var(--brand-gold-hover);
+      border-color: var(--brand-gold-hover);
+      color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(186, 146, 85, 0.4);
+    }
+
+    .btn-olive svg, .btn-gold svg { transition: transform 0.3s ease; }
+    .btn-olive:hover svg, .btn-gold:hover svg { transform: translateX(4px); }
+
+    .btn-cream {
+      background-color: var(--brand-gold);
+      color: var(--brand-btn-text);
+      border-color: var(--brand-gold);
+      border-radius: 9999px;
+      box-shadow: 0 6px 20px var(--brand-gold-glow);
+    }
+
+    .btn-cream:hover {
+      background-color: var(--brand-gold-hover);
+      border-color: var(--brand-gold-hover);
+      color: #000000;
+    }
+
+    .btn-outline-olive {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.8rem 1.65rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--deep-olive);
+      border: 1.5px solid var(--deep-olive);
+      border-radius: 9999px;
+      transition: var(--tr-smooth);
+    }
+
+    .btn-outline-olive:hover {
+      background-color: var(--brand-gold);
+      border-color: var(--brand-gold);
+      color: var(--brand-btn-text);
+      box-shadow: 0 6px 20px var(--brand-gold-glow);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       SECTION 1: NAVBAR (SNUG FIT + HEAVEN WORDMARK + LOGO CREST)
+       ========================================================================== */
+    .header-outer-container {
+      position: fixed;
+      top: 14px;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 0 1rem;
+      pointer-events: none;
+    }
+
+    .site-header {
+      width: fit-content;
+      max-width: 90%;
+      margin: 0 auto;
+      height: var(--nav-height);
+      background: rgba(232, 225, 213, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-taupe);
+      border-radius: 9999px;
+      box-shadow: 0 10px 30px rgba(52, 52, 47, 0.08);
+      padding: 0 clamp(0.85rem, 1.5vw, 1.25rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(0.85rem, 1.8vw, 1.5rem);
+      transition: var(--tr-smooth);
+      pointer-events: auto;
+    }
+
+    .site-header.scrolled {
+      background: rgba(232, 225, 213, 0.97);
+      height: 58px;
+      box-shadow: 0 14px 36px rgba(52, 52, 47, 0.12);
+    }
+
+    .site-header.dark-section {
+      background: rgba(55, 60, 48, 0.95);
+      border-color: var(--border-olive);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.25);
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-crest-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--deep-olive);
+      border: 1.5px solid var(--brand-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(74, 80, 64, 0.2);
+      transition: var(--tr-fast);
+    }
+
+    .brand-crest-icon svg {
+      width: 14px;
+      height: 14px;
+      color: var(--brand-gold);
+    }
+
+    .site-header.dark-section .brand-crest-icon {
+      background: var(--brand-gold);
+      border-color: var(--bg-cream);
+    }
+    .site-header.dark-section .brand-crest-icon svg {
+      color: var(--deep-olive-dark);
+    }
+
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-charcoal);
+      line-height: 1;
+      transition: var(--tr-fast);
+      white-space: nowrap;
+    }
+    .highlight {
+  color: #b26f0c; 
+}
+
+    .site-header.dark-section .brand-name { color: var(--bg-cream); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    .nav-links a {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-charcoal);
+      position: relative;
+      padding: 5px 9px;
+      border-radius: 9999px;
+      transition: var(--tr-smooth);
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background: rgba(74, 80, 64, 0.08);
+      color: var(--walnut-brown);
+      transform: translateY(-1px);
+    }
+
+    .site-header.dark-section .nav-links a { color: var(--text-cream); }
+    .site-header.dark-section .nav-links a:hover {
+      background: rgba(204, 164, 104, 0.16);
+      color: var(--brand-gold);
+    }
+
+    .mobile-toggle {
+      display: none;
+      width: 28px;
+      height: 28px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 4px;
+      cursor: pointer;
+      z-index: 102;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      height: 1.5px;
+      background-color: var(--text-charcoal);
+      transition: var(--tr-smooth);
+    }
+
+    .mobile-toggle span:nth-child(1) { width: 20px; }
+    .mobile-toggle span:nth-child(2) { width: 14px; }
+    .mobile-toggle span:nth-child(3) { width: 18px; }
+
+    .site-header.dark-section .mobile-toggle span {
+      background-color: var(--bg-cream);
+    }
+
+    .mobile-toggle.active span:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg);
+      width: 18px;
+      background-color: var(--bg-cream) !important;
+    }
+    .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+    .mobile-toggle.active span:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg);
+      width: 18px;
+      background-color: var(--bg-cream) !important;
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      inset: 0;
+      background-color: var(--deep-olive-dark);
+      z-index: 101;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 2rem;
+      transform: translateY(-100%);
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mobile-drawer.open { transform: translateY(0); }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .mobile-nav-links a {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--bg-cream);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile-nav-links a span.num {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--brand-gold);
+    }
+
+    /* ==========================================================================
+       SECTION 2: HERO
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background-color: var(--bg-cream);
+      padding-top: calc(var(--nav-height) + 2rem);
+      padding-bottom: 3rem;
+      overflow: hidden;
+    }
+
+    .hero-layout-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(2.5rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+
+    .hero-text-block { max-width: 620px; }
+
+    .hero-title {
+      font-size: clamp(2.6rem, 4.6vw, 3.8rem);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      color: var(--text-charcoal);
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--walnut-brown);
+    }
+
+    .hero-sub-copy {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-charcoal-muted);
+      margin-bottom: 1.85rem;
+      font-weight: 400;
+      max-width: 480px;
+    }
+
+    .hero-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-micro-reassurance {
+      font-size: 0.8rem;
+      color: var(--text-charcoal-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-micro-reassurance svg {
+      color: var(--brand-gold-dark);
+      flex-shrink: 0;
+    }
+
+    .hero-visual-frame {
+      position: relative;
+      background: var(--bg-cream-card);
+      border: 1px solid var(--border-taupe);
+      border-radius: 6px;
+      padding: clamp(1rem, 2vw, 1.5rem);
+      box-shadow: 0 18px 45px rgba(52, 52, 47, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-photo-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 8px 20px rgba(52, 52, 47, 0.06);
+    }
+
+    .hero-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-visual-frame:hover .hero-photo-wrap img {
+      transform: scale(1.03);
+    }
+
+    .hero-quote-caption {
+      margin-top: 1rem;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.45;
+      font-style: italic;
+      color: var(--text-charcoal);
+      text-align: center;
+    }
+
+    .hero-frame-meta {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-taupe);
+      padding-top: 0.75rem;
+      margin-top: 0.85rem;
+      font-size: 0.74rem;
+      color: var(--text-charcoal-muted);
+    }
+
+    .hero-frame-meta strong { color: var(--walnut-brown); }
+
+    /* ==========================================================================
+       SECTION 3: BRAND INTRO (THE HEAVEN APPROACH)
+       ========================================================================== */
+    .brand-intro-section {
+      padding: clamp(3.5rem, 5.5vw, 4.75rem) 0;
+      background-color: var(--bg-cream-light);
+      position: relative;
+      border-top: 1px solid var(--border-taupe);
+    }
+
+    .intro-grid-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: center;
+    }
+
+    .intro-image-block { position: relative; }
+
+    .intro-main-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 20px 45px rgba(52, 52, 47, 0.08);
+    }
+
+    .intro-badge-stamp {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      background-color: var(--deep-olive);
+      color: var(--bg-cream);
+      padding: 1.25rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 12px 28px rgba(52, 52, 47, 0.18);
+      max-width: 210px;
+    }
+
+    .intro-badge-stamp .stamp-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--bg-cream);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .intro-badge-stamp .stamp-sub {
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+    }
+
+    .intro-text-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .intro-heading {
+      font-size: clamp(2rem, 3.5vw, 2.85rem);
+      line-height: 1.15;
+      color: var(--text-charcoal);
+      margin-bottom: 1.25rem;
+    }
+
+    .intro-lead-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+      line-height: 1.55;
+      font-style: italic;
+      color: var(--text-charcoal-muted);
+      border-left: 2px solid var(--walnut-brown);
+      padding-left: 1.35rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro-motto-statement {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--deep-olive);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .intro-feature-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .intro-pill-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--bg-cream);
+      border: 1px solid var(--border-taupe);
+      padding: 0.5rem 1rem;
+      font-size: 0.74rem;
+      font-weight: 500;
+      color: var(--text-charcoal);
+      border-radius: 9999px;
+    }
+
+    .intro-pill-item svg {
+      color: var(--walnut-brown);
+      width: 13px;
+      height: 13px;
+    }
+
+    /* ==========================================================================
+       SECTION 4: COLLECTIONS SHOWCASE (LIVORA POSTER ENGINE)
+       ========================================================================== */
+    .collections-section {
+      padding: clamp(3.5rem, 5.5vw, 4.75rem) 0;
+      background-color: var(--bg-cream);
+      border-top: 1px solid var(--border-taupe);
+      border-bottom: 1px solid var(--border-taupe);
+      position: relative;
+    }
+
+    .collections-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1.85rem;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+
+    .livora-showcase-poster {
+      background: var(--bg-cream-card);
+      border: 1px solid var(--border-taupe);
+      border-radius: 8px;
+      box-shadow: 0 18px 45px rgba(52, 52, 47, 0.06);
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      max-width: 980px;
+      padding: clamp(1.25rem, 2.5vw, 2.25rem);
+    }
+
+    .poster-top-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      position: relative;
+      z-index: 5;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .poster-creator-tag {
+      font-size: 0.8rem;
+      line-height: 1.35;
+      color: var(--text-charcoal);
+      font-weight: 600;
+    }
+
+    .poster-creator-tag small {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 400;
+      color: var(--text-charcoal-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .poster-arrow-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .poster-nav-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--deep-olive);
+      color: var(--bg-cream);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--tr-smooth);
+      border: 1px solid var(--deep-olive);
+      box-shadow: 0 4px 10px rgba(74, 80, 64, 0.16);
+    }
+
+    .poster-nav-btn:hover {
+      background: var(--deep-olive-dark);
+      transform: scale(1.06);
+      box-shadow: 0 6px 14px rgba(74, 80, 64, 0.25);
+    }
+
+    .poster-counter-pill {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--deep-olive);
+      padding: 4px 12px;
+      background: rgba(74, 80, 64, 0.08);
+      border-radius: 50px;
+      border: 1px solid var(--border-taupe);
+    }
+
+    .poster-monogram-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--walnut-brown);
+      color: var(--bg-cream);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .poster-top-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border-taupe);
+      margin-bottom: 0.75rem;
+    }
+
+    .poster-stage-container {
+      position: relative;
+      min-height: clamp(240px, 30vw, 360px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5rem 0 0.85rem;
+    }
+
+    .poster-heaven-logo-watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.14;
+      transition: opacity 0.35s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .watermark-heaven-title {
+      font-family: var(--font-sans);
+      font-weight: 800;
+      font-size: clamp(3rem, 9.5vw, 7.5rem);
+      line-height: 0.9;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--deep-olive);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .watermark-heaven-title span.styled-a {
+      color: var(--walnut-brown);
+      position: relative;
+      display: inline-block;
+      margin: 0 0.02em;
+    }
+
+    .watermark-sub-mart {
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: clamp(0.85rem, 2vw, 1.5rem);
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--text-charcoal);
+      margin-top: 0.35rem;
+    }
+
+    .poster-hero-furniture-img {
+      position: relative;
+      z-index: 2;
+      max-height: clamp(220px, 28vw, 320px);
+      width: auto;
+      max-width: 86%;
+      object-fit: contain;
+      filter: drop-shadow(0 16px 24px rgba(52, 52, 47, 0.16));
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+      cursor: pointer;
+    }
+
+    .poster-hero-furniture-img:hover {
+      transform: scale(1.03) translateY(-3px);
+      filter: drop-shadow(0 20px 30px rgba(52, 52, 47, 0.22));
+    }
+
+    .stage-side-arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(74, 80, 64, 0.85);
+      backdrop-filter: blur(8px);
+      color: var(--bg-cream);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 4;
+      cursor: pointer;
+      transition: var(--tr-smooth);
+      border: 1px solid var(--border-olive);
+    }
+
+    .stage-side-arrow-btn:hover {
+      background: var(--deep-olive);
+      transform: translateY(-50%) scale(1.08);
+      box-shadow: 0 5px 16px rgba(74, 80, 64, 0.3);
+    }
+
+    .stage-arrow-prev { left: 4px; }
+    .stage-arrow-next { right: 4px; }
+
+    .poster-editorial-footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 1.5rem;
+      align-items: flex-end;
+      border-top: 1px solid var(--border-taupe);
+      padding-top: 1.15rem;
+      position: relative;
+      z-index: 3;
+    }
+
+    .poster-piece-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+      line-height: 1.2;
+      color: var(--text-charcoal);
+      margin-bottom: 0.4rem;
+    }
+
+    .poster-piece-description {
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--text-charcoal-muted);
+      margin-bottom: 0.85rem;
+      max-width: 500px;
+    }
+
+    .poster-feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .poster-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-charcoal);
+    }
+
+    .poster-feature-item svg {
+      color: var(--walnut-brown);
+      flex-shrink: 0;
+      width: 14px;
+      height: 14px;
+    }
+
+    .poster-action-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.85rem;
+    }
+
+    .poster-script-signature {
+      font-family: var(--font-script);
+      font-size: 1.5rem;
+      color: var(--walnut-brown);
+      line-height: 1;
+    }
+
+    .poster-bottom-coords {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border-taupe);
+      font-size: 0.72rem;
+      color: var(--text-charcoal-muted);
+    }
+
+    /* ==========================================================================
+       SECTION 5: THE BESPOKE EXPERIENCE (STAGGERED TALL ASYMMETRIC GALLERY + OFF-WHITE CENTER & GREEN BORDERS)
+       ========================================================================== */
+    .bespoke-editorial-section {
+      padding: clamp(4.5rem, 7vw, 6.5rem) 0;
+      /* Center is site's base warm off-white cream (#E8E1D5), gently fading into site's base deep olive/sage green (#4A5040 / #7E8B78) at borders */
+      background-color: var(--bg-cream);
+      background-image: radial-gradient(ellipse at 50% 50%, #E8E1D5 35%, #DFD7CA 62%, #CCD7C7 84%, #AFC0A8 100%);
+      box-shadow: inset 0 0 70px rgba(74, 80, 64, 0.2);
+      border-top: 2px solid var(--deep-olive);
+      border-bottom: 2px solid var(--deep-olive);
+      color: var(--text-charcoal);
+      position: relative;
+    }
+
+    .editorial-header-row {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: flex-end;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid rgba(74, 80, 64, 0.3);
+      margin-bottom: 3.5rem;
+    }
+
+    .editorial-main-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+      font-weight: 400;
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      color: var(--deep-olive-dark);
+    }
+
+    .editorial-main-headline em {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      display: block;
+      color: var(--deep-olive);
+    }
+
+    .editorial-quote-side {
+      border-left: 2px solid var(--terracotta-accent);
+      padding-left: 1.35rem;
+      font-size: 0.94rem;
+      line-height: 1.75;
+      color: var(--text-charcoal-muted);
+      font-weight: 400;
+      max-width: 440px;
+    }
+
+    /* Asymmetric Staggered (Upor-Nich) 2-Column Gallery Grid */
+    .archive-asymmetric-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(2.5rem, 6vw, 5.5rem);
+      align-items: start;
+    }
+
+    .archive-column-left {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(3.5rem, 6vw, 5.5rem);
+    }
+
+    .archive-column-right {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(3.5rem, 6vw, 5.5rem);
+      padding-top: clamp(2.5rem, 6vw, 6rem); /* Staggered downward offset (Upor-Nich) */
+    }
+
+    .editorial-card-item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .editorial-card-photo-wrap {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid rgba(74, 80, 64, 0.25);
+      background: var(--bg-cream-card);
+      box-shadow: 0 14px 32px rgba(52, 52, 47, 0.1);
+      margin-bottom: 0.85rem;
+    }
+
+    .editorial-card-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .editorial-card-item:hover .editorial-card-photo-wrap img {
+      transform: scale(1.03);
+    }
+
+    .editorial-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.65rem;
+      margin-top: 0.15rem;
+      border-top: 1px solid rgba(74, 80, 64, 0.25);
+      margin-bottom: 0.35rem;
+    }
+
+    .editorial-num {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: var(--terracotta-accent);
+      text-transform: uppercase;
+    }
+
+    .editorial-arrow {
+      font-size: 1.15rem;
+      color: var(--terracotta-accent);
+      opacity: 0.7;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .editorial-card-item:hover .editorial-arrow {
+      transform: translate(3px, -3px);
+      opacity: 1;
+    }
+
+    .editorial-card-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-weight: 400;
+      color: var(--deep-olive-dark);
+      margin-bottom: 0.4rem;
+      line-height: 1.15;
+    }
+
+    .editorial-card-desc {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: var(--text-charcoal-muted);
+    }
+
+    .archive-manifesto-block {
+      border-top: 1px solid rgba(74, 80, 64, 0.25);
+      padding-top: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      max-width: 440px;
+    }
+
+    .archive-manifesto-text {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.85;
+      color: var(--text-charcoal-muted);
+    }
+
+    .archive-manifesto-btn {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--deep-olive-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: var(--tr-fast);
+      width: fit-content;
+      padding-bottom: 2px;
+      border-bottom: 1.5px solid var(--deep-olive);
+    }
+
+    .archive-manifesto-btn:hover {
+      color: var(--terracotta-accent);
+      border-bottom-color: var(--terracotta-accent);
+      gap: 12px;
+    }
+
+    /* ==========================================================================
+       SECTION 6: WHY HEAVEN (EDITORIAL NUMBERED HAIRLINE GRID — CREAM BACKGROUND)
+       ========================================================================== */
+    .why-heaven-section {
+      padding: clamp(3.5rem, 6vw, 5rem) 0;
+      background-color: var(--bg-cream-light);
+      border-bottom: 1px solid var(--border-taupe);
+    }
+
+    .why-editorial-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .why-editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem 2.5rem;
+    }
+
+    .why-editorial-item {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-taupe);
+      transition: var(--tr-smooth);
+    }
+
+    .why-editorial-item:hover {
+      border-bottom-color: var(--brand-gold);
+    }
+
+    .why-editorial-item:hover .editorial-arrow {
+      transform: translate(3px, -3px);
+      color: var(--brand-gold);
+      opacity: 1;
+    }
+
+    .why-editorial-title {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      font-weight: 500;
+      color: var(--deep-olive-dark);
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+    }
+
+    .why-editorial-desc {
+      font-size: 0.86rem;
+      line-height: 1.65;
+      color: var(--text-charcoal-muted);
+    }
+
+    .editorial-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.65rem;
+    }
+
+    .editorial-num {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: var(--terracotta-accent);
+      text-transform: uppercase;
+    }
+
+    .editorial-arrow {
+      font-size: 1.25rem;
+      color: var(--terracotta-accent);
+      opacity: 0.7;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    /* ==========================================================================
+       SECTION 7: SHOWROOM
+       ========================================================================== */
+    .showroom-section {
+      padding: clamp(3.5rem, 5.5vw, 4.75rem) 0;
+      background-color: var(--deep-olive);
+      color: var(--bg-cream);
+      position: relative;
+    }
+
+    .showroom-grid-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(2.5rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+
+    .showroom-photo-frame {
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+    }
+
+    .showroom-photo-frame img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s ease;
+    }
+
+    .showroom-photo-frame:hover img { transform: scale(1.03); }
+
+    .showroom-badge-overlay {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: rgba(55, 60, 48, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-olive);
+      padding: 10px 16px;
+      border-radius: 9999px;
+      color: var(--bg-cream);
+      text-align: right;
+    }
+
+    .showroom-badge-overlay small {
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      display: block;
+    }
+
+    .showroom-badge-overlay span {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+    }
+
+    .showroom-address-panel {
+      margin: 1.75rem 0 2rem;
+      background: rgba(55, 60, 48, 0.6);
+      border: 1px solid var(--border-olive);
+      padding: 1.5rem;
+      border-left: 3px solid var(--brand-gold);
+      border-radius: 4px;
+    }
+
+    .showroom-address-panel .address-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .showroom-address-panel .address-text {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--bg-cream);
+      line-height: 1.35;
+    }
+
+    .showroom-address-panel .address-sub {
+      font-size: 0.82rem;
+      color: var(--text-cream-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* ==========================================================================
+       SECTION 8: FOUNDER QUOTE
+       ========================================================================== */
+    .founder-quote-section {
+      padding: clamp(3.5rem, 6vw, 5rem) 0;
+      background-color: var(--bg-cream);
+      position: relative;
+    }
+
+    .quote-content-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .quote-icon-decor {
+      font-family: var(--font-serif);
+      font-size: 4.5rem;
+      line-height: 1;
+      color: var(--brand-gold);
+      opacity: 0.45;
+      margin-bottom: -1.25rem;
+      display: block;
+    }
+
+    .founder-quote-phrase {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+      line-height: 1.4;
+      color: var(--text-charcoal);
+      font-style: italic;
+      margin-bottom: 1.85rem;
+      font-weight: 400;
+    }
+
+    .founder-signature-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .founder-signature-box strong {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--text-charcoal);
+    }
+
+    .founder-signature-box span {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--walnut-brown);
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       SECTION 9: TIMELINE
+       ========================================================================== */
+    .timeline-section {
+      padding: clamp(3.5rem, 5.5vw, 4.75rem) 0;
+      background-color: var(--deep-olive-dark);
+      color: var(--bg-cream);
+      position: relative;
+    }
+
+    .timeline-header-block {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.75rem;
+    }
+
+    .timeline-track-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+      position: relative;
+    }
+
+    .timeline-track-grid::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 5%;
+      right: 5%;
+      height: 1px;
+      background: linear-gradient(90deg, var(--brand-gold), rgba(204, 164, 104, 0.25));
+      z-index: 1;
+    }
+
+    .timeline-node-item {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0.4rem;
+    }
+
+    .timeline-dot-pin {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--deep-olive-dark);
+      border: 2px solid var(--brand-gold);
+      margin-bottom: 1.5rem;
+      transition: var(--tr-smooth);
+    }
+
+    .timeline-node-item:hover .timeline-dot-pin {
+      background: var(--brand-gold);
+      box-shadow: 0 0 10px var(--brand-gold);
+      transform: scale(1.2);
+    }
+
+    .timeline-year-text {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--brand-gold);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .timeline-desc-text {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: var(--text-cream-muted);
+    }
+
+    /* ==========================================================================
+       SECTION 10: FINAL CONVERSION CTA
+       ========================================================================== */
+    .final-cta-section {
+      padding: clamp(4rem, 6vw, 5.25rem) 0;
+      background-color: var(--deep-olive);
+      color: var(--bg-cream);
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .final-cta-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(204, 164, 104, 0.16) 0%, rgba(55, 60, 48, 0.95) 75%);
+      z-index: 1;
+    }
+
+    .final-cta-container {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .final-cta-title {
+      font-size: clamp(2rem, 3.5vw, 2.85rem);
+      line-height: 1.15;
+      margin-bottom: 1.15rem;
+      color: var(--bg-cream);
+    }
+
+    .final-cta-text {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-cream-muted);
+      margin-bottom: 2rem;
+      font-weight: 300;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-cta-buttons-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .final-contact-pills {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--bg-cream);
+      padding: 8px 20px;
+      border: 1px solid var(--border-olive);
+      border-radius: 9999px;
+      background: rgba(55, 60, 48, 0.6);
+      font-size: 0.85rem;
+      transition: var(--tr-fast);
+    }
+
+    .contact-pill-link:hover {
+      border-color: var(--brand-gold);
+      color: var(--brand-btn-text);
+      background: var(--brand-gold);
+      box-shadow: 0 6px 18px var(--brand-gold-glow);
+    }
+
+    .final-reassurance-note {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-olive);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ==========================================================================
+       SECTION 11: FOOTER (CLEAN, MINIMAL & LUXURY)
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--text-charcoal);
+      color: var(--bg-cream);
+      padding: clamp(3rem, 5vw, 4rem) 0 2rem;
+      border-top: 1px solid rgba(184, 173, 158, 0.15);
+    }
+
+    .footer-simple-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 2.5rem;
+      align-items: start;
+    }
+
+    .footer-brand-heading {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--bg-cream);
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .footer-brand-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brand-gold);
+      margin-bottom: 1rem;
+      display: block;
+      font-weight: 600;
+    }
+
+    .footer-contact-details {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--text-cream-muted);
+    }
+
+    .footer-contact-details a {
+      color: var(--brand-gold);
+      display: inline-block;
+      transition: var(--tr-fast);
+    }
+
+    .footer-contact-details a:hover {
+      color: var(--bg-cream);
+      text-decoration: underline;
+    }
+
+    .footer-socials-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 1.25rem;
+    }
+
+    .footer-social-circle {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(232, 225, 213, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bg-cream);
+      transition: var(--tr-fast);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-social-circle:hover {
+      border-color: var(--brand-gold);
+      background: var(--brand-gold);
+      color: var(--brand-btn-text);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom-bar {
+      border-top: 1px solid rgba(232, 225, 213, 0.1);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-cream-muted);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    
+    /* REAL PIECE PHOTO GALLERY MODAL STYLES */
+    .real-photo-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .real-photo-card {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1px solid var(--border-taupe);
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(52, 52, 47, 0.08);
+      position: relative;
+      cursor: pointer;
+    }
+
+    .real-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .real-photo-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .poster-gallery-cue {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(74, 80, 64, 0.85);
+      backdrop-filter: blur(8px);
+      color: var(--bg-cream);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-olive);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: var(--tr-fast);
+      z-index: 5;
+    }
+
+    .poster-gallery-cue:hover {
+      background: var(--deep-olive-dark);
+      color: var(--brand-gold);
+      transform: translateY(-1px);
+    }
+
+    
+    /* ==========================================================================
+       REAL PIECE GALLERY & SPECIFICATIONS MODAL
+       ========================================================================== */
+    .gallery-showcase-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .gallery-main-featured-frame {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: #FFFFFF;
+      border: 1px solid var(--border-taupe);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(52, 52, 47, 0.08);
+      margin-bottom: 0.75rem;
+    }
+
+    .gallery-main-featured-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.25s ease;
+    }
+
+    .gallery-thumb-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .gallery-thumb-card {
+      aspect-ratio: 1 / 1;
+      background: #FFFFFF;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      padding: 2px;
+      transition: var(--tr-fast);
+      box-shadow: 0 2px 6px rgba(52, 52, 47, 0.06);
+    }
+
+    .gallery-thumb-card.active, .gallery-thumb-card:hover {
+      border-color: var(--brand-gold);
+      transform: translateY(-2px);
+    }
+
+    .gallery-thumb-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+    .gallery-spec-table {
+      width: 100%;
+      font-size: 0.82rem;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .gallery-spec-table td {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(184, 173, 158, 0.35);
+    }
+
+    .gallery-spec-table td:first-child {
+      color: var(--walnut-brown);
+      font-weight: 600;
+      width: 40%;
+    }
+
+    .gallery-spec-table td:last-child {
+      color: var(--text-charcoal);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-showcase-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+    }
+
+    /* Modals & Popups */
+    .floating-concierge {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 90;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand-gold);
+      border: 1px solid var(--brand-gold-hover);
+      color: var(--brand-btn-text);
+      padding: 10px 20px;
+      border-radius: 9999px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22), 0 0 16px var(--brand-gold-glow);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: var(--tr-smooth);
+    }
+
+    .floating-concierge svg { color: var(--brand-btn-text); }
+
+    .floating-concierge:hover {
+      background: var(--brand-gold-hover);
+      color: #000000;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(186, 146, 85, 0.4);
+    }
+
+    .floating-concierge:hover svg { color: #000000; }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(52, 52, 47, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-dialog {
+      background: var(--bg-cream-card);
+      border: 1px solid var(--border-taupe);
+      width: 100%;
+      max-width: 620px;
+      border-radius: 12px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      transform: translateY(20px) scale(0.98);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-backdrop.open .modal-dialog {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-header {
+      background: var(--deep-olive);
+      color: var(--bg-cream);
+      padding: 1.15rem 1.5rem;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .modal-header h3 {
+      font-size: 1.45rem;
+      color: var(--bg-cream);
+      margin-bottom: 2px;
+    }
+
+    .modal-header p {
+      font-size: 0.8rem;
+      color: var(--brand-gold);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--border-olive);
+      color: var(--bg-cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: var(--tr-fast);
+      z-index: 15;
+      pointer-events: auto;
+    }
+
+    .modal-close-btn svg {
+      pointer-events: none;
+      width: 18px;
+      height: 18px;
+    }
+
+    .modal-close-btn:hover {
+      background: var(--brand-gold);
+      color: var(--brand-btn-text);
+      border-color: var(--brand-gold);
+      transform: scale(1.08);
+    }
+
+    .modal-close-btn:hover {
+      background: var(--brand-gold);
+      color: var(--brand-btn-text);
+      border-color: var(--brand-gold);
+    }
+
+    .modal-scrollable-body {
+      padding: 1.25rem 1.5rem;
+      overflow-y: auto;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .modal-sticky-footer {
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      background: var(--bg-cream-card);
+      border-top: 1px solid var(--border-taupe);
+      flex-shrink: 0;
+    }
+
+    .form-group { margin-bottom: 1rem; }
+
+    .form-label {
+      display: block;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-charcoal);
+      margin-bottom: 0.35rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1.15rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      border: 1px solid var(--border-taupe);
+      background: #ffffff;
+      color: var(--text-charcoal);
+      border-radius: 9999px;
+      outline: none;
+      transition: var(--tr-fast);
+    }
+
+    textarea.form-control {
+      border-radius: 12px;
+    }
+
+    .form-control:focus {
+      border-color: var(--brand-gold);
+      box-shadow: 0 0 0 3px var(--brand-gold-glow);
+    }
+
+    .chips-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .chip-btn {
+      padding: 6px 14px;
+      font-size: 0.76rem;
+      font-weight: 600;
+      border: 1px solid var(--border-taupe);
+      background: var(--bg-cream);
+      color: var(--text-charcoal);
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: var(--tr-fast);
+    }
+
+    .chip-btn.active, .chip-btn:hover {
+      background: var(--brand-gold);
+      border-color: var(--brand-gold);
+      color: var(--brand-btn-text);
+      box-shadow: 0 4px 12px var(--brand-gold-glow);
+    }
+
+    .btn-submit-action {
+      width: 100%;
+      padding: 0.95rem 1.5rem;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      background: var(--brand-gold);
+      color: var(--brand-btn-text);
+      border-radius: 9999px;
+      box-shadow: 0 6px 20px var(--brand-gold-glow);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid var(--brand-gold);
+      transition: var(--tr-fast);
+    }
+
+    .btn-submit-action:hover {
+      background: var(--brand-gold-hover);
+      border-color: var(--brand-gold-hover);
+      color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(186, 146, 85, 0.4);
+    }
+
+    .quote-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--deep-olive);
+      border: 1px solid var(--brand-gold);
+      color: var(--bg-cream);
+      padding: 12px 24px;
+      border-radius: 9999px;
+      box-shadow: 0 12px 35px rgba(52, 52, 47, 0.35);
+      z-index: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      opacity: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    .quote-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-layout-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .intro-grid-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .archive-asymmetric-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .archive-column-right { padding-top: 0; }
+      .archive-header-note { text-align: left; max-width: 100%; }
+      .why-editorial-grid { grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
+      .showroom-grid-layout { grid-template-columns: 1fr; }
+      .timeline-track-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .timeline-track-grid::before { display: none; }
+      .timeline-node-item { border-left: 2px solid var(--brand-gold); padding-left: 1.25rem; }
+      .timeline-dot-pin { display: none; }
+      .footer-simple-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      .header-outer-container { top: 10px; padding: 0 0.75rem; }
+      .site-header { width: min(92%, 500px); justify-content: space-between; padding: 0 1.25rem; height: 58px; }
+      .nav-links { display: none; }
+      .mobile-toggle { display: flex; }
+      .hero-title { font-size: 2.35rem; }
+      .archive-header-title { font-size: 2.8rem; }
+      .why-editorial-grid { grid-template-columns: 1fr; }
+      .livora-showcase-poster { padding: 1.15rem 0.85rem; }
+      .poster-feature-list { grid-template-columns: 1fr; }
+      .poster-stage-container { min-height: 220px; }
+      .poster-hero-furniture-img { max-height: 200px; }
+      .footer-simple-grid { grid-template-columns: 1fr; }
+      .final-contact-pills { flex-direction: column; gap: 0.85rem; width: 100%; }
+      .contact-pill-link { width: 100%; justify-content: center; }
+      .intro-badge-stamp { position: static; margin-top: 1.25rem; max-width: 100%; }
+      .watermark-heaven-title { font-size: 2.8rem; }
+      .watermark-sub-mart { font-size: 0.72rem; letter-spacing: 0.22em; }
+    }
+
+    @media (max-width: 420px) {
+      .container { padding-left: 1rem; padding-right: 1rem; }
+      .btn-olive, .btn-gold { width: 100%; }
+      .hero-actions-row { flex-direction: column; width: 100%; }
+      .btn-outline-olive { width: 100%; justify-content: center; }
+      .floating-concierge span { display: none; }
+      .floating-concierge { padding: 12px; border-radius: 50%; bottom: 18px; right: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SECTION 1: NAVBAR (SNUG FIT + HEAVEN WORDMARK + LOGO CREST + BALANCED SPACING)
+       ========================================================================== -->
+  <div class="header-outer-container">
+    <header class="site-header" id="siteHeader">
+      <a href="#hero" class="brand-logo" aria-label="Heaven Home">
+        <div class="brand-crest-icon" title="Heaven">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 4v16M19 4v16M5 12h14"/>
+          </svg>
+        </div>
+        <span class="brand-name">HE<span class="highlight">A</span>VEN
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#collections">Collections</a>
+        <a href="#bespoke">Bespoke</a>
+        <a href="#our-story">Our Story</a>
+        <a href="#why-heaven">Why Heaven</a>
+        <a href="#showroom">Showroom</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-nav-links">
+      <a href="#collections" class="mobile-nav-item">
+        <span>Collections</span>
+        <span class="num">01</span>
+      </a>
+      <a href="#bespoke" class="mobile-nav-item">
+        <span>Bespoke</span>
+        <span class="num">02</span>
+      </a>
+      <a href="#our-story" class="mobile-nav-item">
+        <span>Our Story</span>
+        <span class="num">03</span>
+      </a>
+      <a href="#why-heaven" class="mobile-nav-item">
+        <span>Why Heaven</span>
+        <span class="num">04</span>
+      </a>
+      <a href="#showroom" class="mobile-nav-item">
+        <span>Showroom</span>
+        <span class="num">05</span>
+      </a>
+      <a href="#contact" class="mobile-nav-item">
+        <span>Contact</span>
+        <span class="num">06</span>
+      </a>
+    </nav>
+
+    <div style="border-top: 1px solid var(--border-olive); padding-top: 1.25rem;">
+      <button class="btn-olive btn-cream open-quote-modal" style="width: 100%; margin-bottom: 1rem;">
+        <span>Request a Quote →</span>
+      </button>
+      <p style="font-size: 0.82rem; color: var(--text-cream-muted); margin-bottom: 0.4rem;">Agrabad Access Road, Chattogram</p>
+      <p style="font-size: 0.82rem; color: var(--brand-gold);">Call: +880 1960-481983</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 2: HERO
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-layout-grid">
+      <div class="hero-text-block">
+        <div class="eyebrow">BESPOKE FURNITURE · CHITTAGONG</div>
+        <h1 class="hero-title">
+          Furniture, Crafted <em>Around You.</em>
+        </h1>
+        <p class="hero-sub-copy">
+          Premium bespoke furniture designed, crafted and customized around your space, taste and lifestyle.
+        </p>
+
+        <div class="hero-actions-row">
+          <button class="btn-olive open-quote-modal" aria-label="Request a quote">
+            <span>Request a Quote</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="#collections" class="btn-outline-olive">
+            <span>Explore The Collections</span>
+          </a>
+        </div>
+
+        <div class="hero-micro-reassurance">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Free design consultation · Delivery & installation included in Chattogram</span>
+        </div>
+      </div>
+
+      <!-- Hero Aside Frame -->
+      <div class="hero-visual-frame">
+        <div class="hero-photo-wrap">
+          <img src="images/hero_earthy_lounge.jpg" alt="Warm terracotta bouclé armchair and minimal bronze table in organic studio space">
+        </div>
+        <p class="hero-quote-caption">
+          “Tailor-made dimensions, seasoned solid hardwoods, and upholstery selected for your space.”
+        </p>
+        <div class="hero-frame-meta">
+          <span>Studio: <strong>Agrabad, Chattogram</strong></span>
+          <span>Craft: <strong>Since 2020</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: BRAND INTRODUCTION — THE HEAVEN APPROACH
+       ========================================================================== -->
+  <section class="brand-intro-section" id="our-story">
+    <div class="container intro-grid-layout">
+      <div class="intro-image-block">
+        <img src="images/approach_bespoke_lounge.png" 
+             alt="Heaven Furniture Mart curated bespoke living composition" 
+             class="intro-main-photo" 
+             loading="lazy">
+        <div class="intro-badge-stamp">
+          <span class="stamp-title">Heaven Mart</span>
+          <span class="stamp-sub">Agrabad Studio · Est. 2020</span>
+        </div>
+      </div>
+
+      <div class="intro-text-column">
+        <div class="eyebrow">THE HEAVEN APPROACH</div>
+        <h2 class="intro-heading">
+          Made for your space.<br>Made for your life.
+        </h2>
+        
+        <p class="intro-lead-quote">
+          “At Heaven Furniture Mart, we believe furniture is more than just function; it is a reflection of lifestyle, taste, and comfort. Every piece we create is designed to bring lasting elegance into the homes of our clients.”
+        </p>
+
+        <div class="intro-motto-statement">
+          Designed. Crafted. Customized.
+        </div>
+
+        <div class="intro-feature-pills">
+          <div class="intro-pill-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Founded in 2020</span>
+          </div>
+          <div class="intro-pill-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Chattogram-based</span>
+          </div>
+          <div class="intro-pill-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Bespoke Styling</span>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn-olive open-quote-modal" aria-label="Start a conversation">
+            <span>Start a Conversation →</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: COLLECTIONS SHOWCASE (7 BESPOKE POSTER SUITES)
+       ========================================================================== -->
+  <section class="collections-section" id="collections">
+    <div class="container">
+      <div class="collections-header-bar">
+        <div>
+          <div class="eyebrow">OUR BESPOKE SHOWCASE</div>
+          <h2 class="section-title" style="margin-bottom: 0;">Where Luxury Meets Comfort.</h2>
+        </div>
+        <div style="font-size: 0.88rem; color: var(--text-charcoal-muted); max-width: 440px;">
+          Explore signature handcrafted suites tailored to room dimensions and interior palettes across Chattogram.
+        </div>
+      </div>
+
+      <!-- THE COMPACT LIVORA-INSPIRED SHOWCASE CARD -->
+      <div class="livora-showcase-poster" id="livoraShowcase">
+        
+        <!-- Top Poster Nav Row -->
+        <div class="poster-top-meta-row">
+          <div class="poster-creator-tag">
+            Heaven Furniture Mart<br>
+            <small>Bespoke Studio · Agrabad Access Road</small>
+          </div>
+
+          <!-- Arrow Navigation Controls (< and >) -->
+          <div class="poster-arrow-controls">
+            <button type="button" class="poster-nav-btn" id="btnPrevCollection" aria-label="Previous collection piece">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <span class="poster-counter-pill" id="posterCounterPill">01 / 07</span>
+            <button type="button" class="poster-nav-btn" id="btnNextCollection" aria-label="Next collection piece">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <span class="poster-monogram-badge" title="Heaven Furniture Mart">H</span>
+          </div>
+        </div>
+
+        <div class="poster-top-divider"></div>
+
+        <!-- Central Stage with Watermark -->
+        <div class="poster-stage-container">
+          <button type="button" class="stage-side-arrow-btn stage-arrow-prev" id="stageArrowPrev" aria-label="Previous piece">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button type="button" class="stage-side-arrow-btn stage-arrow-next" id="stageArrowNext" aria-label="Next piece">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+          <div class="poster-heaven-logo-watermark" id="posterWatermark">
+            <div class="watermark-heaven-title">
+              HE<span class="styled-a">A</span>VEN
+            </div>
+            <div class="watermark-sub-mart">FURNITURE MART</div>
+          </div>
+          
+          <img src="images/cutout_danish_chair.png" 
+               alt="Danish solid oak dining chair by Heaven Furniture Mart" 
+               class="poster-hero-furniture-img" 
+               id="posterMainImg"
+               style="cursor: pointer;"
+               title="Click to view full piece gallery">
+        </div>
+
+        <!-- Bottom Editorial Details Block -->
+        <div class="poster-editorial-footer-grid">
+          <div>
+            <div class="eyebrow" id="posterItemCategory" style="margin-bottom: 0.25rem;">COLLECTION 01 · SOLID OAK DINING CHAIR</div>
+            <h3 class="poster-piece-title" id="posterPieceTitle">The Danish Solid Oak Dining & Study Chair</h3>
+            <p class="poster-piece-description" id="posterPieceDesc">
+              Curved steam-bent oak backrest with tactile woven upholstery and hand-rubbed natural oil finish for refined dining.
+            </p>
+
+            <div class="poster-feature-list" id="posterFeatures">
+              <div class="poster-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Solid Seasoned Hardwood</span>
+              </div>
+              <div class="poster-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Hand-Carved Mahogany Details</span>
+              </div>
+              <div class="poster-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Steam-Bent Ergonomic Back</span>
+              </div>
+              <div class="poster-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Executive Task Seating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster-action-group">
+            <span class="poster-script-signature">Heaven & Space</span>
+            <button type="button" class="btn-olive" id="posterCtaBtn">
+              <span>View Gallery →</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="poster-bottom-coords">
+          <span>heavenfurnituremart.com · Agrabad Access Road, Chattogram</span>
+          <span style="font-family: var(--font-serif); font-size: 0.88rem; font-weight: 600;">Edition 2026</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: THE BESPOKE EXPERIENCE (EXACT ORIGINAL COMMISSION TEXT + USER PHOTOS + OFFWHITE/GREEN BORDERS)
+       ========================================================================== -->
+  <section class="bespoke-editorial-section" id="bespoke">
+    <div class="container">
+      
+      <!-- Top Editorial Header (02 / SELECTED BESPOKE COMMISSIONS · Bespoke Highlight — Give this its own moment) -->
+      <div class="archive-header-block" style="padding-bottom: 1.75rem; border-bottom: 1px solid rgba(74, 80, 64, 0.25); margin-bottom: 3.5rem;">
+        <div class="eyebrow" style="margin-bottom: 0.85rem; color: var(--walnut-brown);">02 / SELECTED BESPOKE COMMISSIONS</div>
+        <h2 style="font-family: var(--font-serif); font-size: clamp(2.8rem, 5.5vw, 4.2rem); font-weight: 500; line-height: 1.1; letter-spacing: -0.015em; color: var(--deep-olive-dark); margin-bottom: 1.25rem;">
+          Bespoke Highlight —<br>
+          <em style="font-style: italic; color: #B88D48; font-weight: 400;">Give this its own moment.</em>
+        </h2>
+        <p style="font-size: 1.05rem; line-height: 1.75; color: var(--text-charcoal-muted); max-width: 720px; font-weight: 400;">
+          A curated collection of bespoke spaces and custom suites crafted for private residences across Chattogram.
+        </p>
+      </div>
+
+      <!-- Asymmetric Staggered (Upor-Nich) 2-Column Gallery Grid -->
+      <div class="archive-asymmetric-grid">
+        
+        <!-- Left Column -->
+        <div class="archive-column-left">
+          
+          <!-- Piece 01 (Casa Agrabad — ORGANIC LIVING & COFFEE PLINTH) -->
+          <div class="editorial-card-item">
+            <div class="editorial-card-photo-wrap" style="aspect-ratio: 16 / 11;">
+              <img src="images/archive_casa_agrabad_living.png" 
+                   alt="Casa Agrabad organic Japandi living suite with solid timber coffee plinth and curved bouclé chair" 
+                   loading="lazy">
+            </div>
+            <div class="editorial-card-top">
+              <div>
+                <h3 class="editorial-card-title" style="margin-bottom: 2px;">Casa Agrabad</h3>
+                <span style="font-family: var(--font-sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--walnut-brown); font-weight: 700; display: block;">
+                  ORGANIC LIVING & COFFEE PLINTH
+                </span>
+              </div>
+              <span style="font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-charcoal-muted); letter-spacing: 0.06em; font-weight: 600;">2025</span>
+            </div>
+          </div>
+
+          <!-- Piece 03 (The Khulshi Residence — BOUCLÉ MASTER BED SUITE) -->
+          <div class="editorial-card-item">
+            <div class="editorial-card-photo-wrap" style="aspect-ratio: 4 / 5;">
+              <img src="images/archive_khulshi_master_bed.png" 
+                   alt="The Khulshi Residence luxury bouclé upholstered low master bed with fluted wood nightstands" 
+                   loading="lazy">
+            </div>
+            <div class="editorial-card-top">
+              <div>
+                <h3 class="editorial-card-title" style="margin-bottom: 2px;">The Khulshi Residence</h3>
+                <span style="font-family: var(--font-sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--walnut-brown); font-weight: 700; display: block;">
+                  BOUCLÉ MASTER BED SUITE
+                </span>
+              </div>
+              <span style="font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-charcoal-muted); letter-spacing: 0.06em; font-weight: 600;">2024</span>
+            </div>
+          </div>
+
+          <!-- Editorial Manifesto & Direct Conversation Action -->
+          <div class="archive-manifesto-block">
+            <p class="archive-manifesto-text">
+              Every project begins with a walk, a conversation, and an inventory of what deserves to remain in your space.
+            </p>
+            <div>
+              <button type="button" class="btn-olive open-quote-modal" data-category="Full Home Bespoke" style="margin-top: 0.25rem;">
+                <span>Start a Conversation →</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column (Staggered Downward Upor-Nich) -->
+        <div class="archive-column-right">
+          
+          <!-- Piece 02 (Still Space Studio — SCULPTURAL STONE DINING) -->
+          <div class="editorial-card-item">
+            <div class="editorial-card-photo-wrap" style="aspect-ratio: 4 / 5;">
+              <img src="images/archive_still_space_dining.png" 
+                   alt="Still Space Studio sculptural travertine dining table with curved organic pedestal and black chairs" 
+                   loading="lazy">
+            </div>
+            <div class="editorial-card-top">
+              <div>
+                <h3 class="editorial-card-title" style="margin-bottom: 2px;">Still Space Studio</h3>
+                <span style="font-family: var(--font-sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--walnut-brown); font-weight: 700; display: block;">
+                  SCULPTURAL STONE DINING
+                </span>
+              </div>
+              <span style="font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-charcoal-muted); letter-spacing: 0.06em; font-weight: 600;">2026</span>
+            </div>
+          </div>
+
+          <!-- Piece 04 (The Nasirabad Villa — WARDROBE & VANITY SUITE) -->
+          <div class="editorial-card-item">
+            <div class="editorial-card-photo-wrap" style="aspect-ratio: 4 / 5;">
+              <img src="images/archive_nasirabad_vanity_wardrobe.png" 
+                   alt="The Nasirabad Villa architectural wardrobe suite with backlit display shelving and vanity" 
+                   loading="lazy">
+            </div>
+            <div class="editorial-card-top">
+              <div>
+                <h3 class="editorial-card-title" style="margin-bottom: 2px;">The Nasirabad Villa</h3>
+                <span style="font-family: var(--font-sans); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--walnut-brown); font-weight: 700; display: block;">
+                  WARDROBE & VANITY SUITE
+                </span>
+              </div>
+              <span style="font-family: var(--font-sans); font-size: 0.78rem; color: var(--text-charcoal-muted); letter-spacing: 0.06em; font-weight: 600;">2025</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: WHY HEAVEN (EDITORIAL NUMBERED HAIRLINE GRID — CREAM BACKGROUND)
+       ========================================================================== -->
+  <section class="why-heaven-section" id="why-heaven">
+    <div class="container">
+      
+      <div class="why-editorial-header">
+        <div>
+          <div class="eyebrow">THE HEAVEN DISTINCTION</div>
+          <h2 class="section-title" style="margin-bottom: 0;">Why Heaven</h2>
+        </div>
+        <div style="font-size: 0.9rem; color: var(--text-charcoal-muted); max-width: 420px;">
+          Built on craftsmanship, transparency, and a dedication to bespoke living in Chattogram.
+        </div>
+      </div>
+
+      <div class="editorial-divider" style="width: 100%; height: 1px; background: var(--border-taupe); margin-bottom: 2rem;"></div>
+
+      <!-- 6 EDITORIAL NUMBERED TRUST POINTS WITH ↗ ARROWS -->
+      <div class="why-editorial-grid">
+        
+        <div class="why-editorial-item">
+          <div class="editorial-card-top">
+            <span class="editorial-num">0 1</span>
+            <span class="editorial-arrow">↗</span>
+          </div>
+          <h3 class="why-editorial-title">Free Design Consultation</h3>
+          <p class="why-editorial-desc">
+            Start with your ideas. We help shape them with personalized room layout, proportion guidance, and wood samples.
+          </p>
+        </div>
+
+        <div class="why-editorial-item">
+          <div class="editorial-card-top">
+            <span class="editorial-num">0 2</span>
+            <span class="editorial-arrow">↗</span>
+          </div>
+          <h3 class="why-editorial-title">Fully Bespoke & Tailored</h3>
+          <p class="why-editorial-desc">
+            Built from scratch around your room dimensions, lifestyle, and taste — never mass-produced from rigid templates.
+          </p>
+        </div>
+
+        <div class="why-editorial-item">
+          <div class="editorial-card-top">
+            <span class="editorial-num">0 3</span>
+            <span class="editorial-arrow">↗</span>
+          </div>
+          <h3 class="why-editorial-title">Premium Hardwoods</h3>
+          <p class="why-editorial-desc">
+            Seasoned Burma Teak, Solid Oak, and Walnut with high-resilience memory cushioning and brass joinery.
+          </p>
+        </div>
+
+        <div class="why-editorial-item">
+          <div class="editorial-card-top">
+            <span class="editorial-num">0 4</span>
+            <span class="editorial-arrow">↗</span>
+          </div>
+          <h3 class="why-editorial-title">Chattogram Showroom</h3>
+          <p class="why-editorial-desc">
+            Visit our physical showroom at Agrabad Access Road to touch fabrics and inspect joinery firsthand.
+          </p>
+        </div>
+
+        <div class="why-editorial-item">
+          <div class="editorial-card-top">
+            <span class="editorial-num">0 5</span>
+            <span class="editorial-arrow">↗</span>
+          </div>
+          <h3 class="why-editorial-title">Delivery & Installation</h3>
+          <p class="why-editorial-desc">
+            Direct transportation, precision on-site assembly, and bespoke room staging included across Chattogram.
+          </p>
+        </div>
+
+        <div class="why-editorial-item">
+          <div class="editorial-card-top">
+            <span class="editorial-num">0 6</span>
+            <span class="editorial-arrow">↗</span>
+          </div>
+          <h3 class="why-editorial-title">Easy Stage Payments</h3>
+          <p class="why-editorial-desc">
+            Transparent staged payment options designed for a smoother, confident custom furniture commission.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Trust Highlight Banner -->
+      <div style="margin-top: 2rem; padding: 1.25rem 1.75rem; background: var(--bg-cream); border: 1px solid var(--border-taupe); border-radius: 9999px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--terracotta-accent); font-weight: 700;">★</span>
+          <span style="font-size: 0.92rem; font-weight: 600; color: var(--deep-olive-dark);">Trusted by hundreds of happy homeowners, architects & interior designers across Chattogram</span>
+        </div>
+        <button class="btn-olive open-quote-modal" style="padding: 0.65rem 1.5rem; font-size: 0.74rem;">
+          <span>Request Quote →</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: SHOWROOM (PHYSICAL PRESENCE)
+       ========================================================================== -->
+  <section class="showroom-section" id="showroom">
+    <div class="container showroom-grid-layout">
+      <div class="showroom-photo-frame">
+        <img src="images/showroom_stone_console.png" 
+             alt="Heaven Furniture Mart physical showroom atmosphere and stone craft details" 
+             loading="lazy">
+        <div class="showroom-badge-overlay">
+          <small>Agrabad Access Road</small>
+          <span>Open Daily 10 AM – 9 PM</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="eyebrow eyebrow-dark">PHYSICAL PRESENCE & EXPERIENCE</div>
+        <h2 class="section-title section-title-dark">See the difference in person.</h2>
+        
+        <p class="lead-copy lead-copy-dark">
+          “Visit our showroom at Agrabad Access Road, Chattogram and experience our furniture, materials and craftsmanship up close.”
+        </p>
+
+        <div class="showroom-address-panel">
+          <div class="address-tag">Showroom Studio Location</div>
+          <div class="address-text">Agrabad Access Road, Chattogram, Bangladesh</div>
+          <div class="address-sub">Convenient parking & dedicated design consultation lounge</div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://maps.google.com/?q=Agrabad+Access+Road,+Chattogram,+Bangladesh" target="_blank" rel="noopener" class="btn-olive btn-cream" aria-label="Open in Google Maps">
+            <span>Open in Google Maps ↗</span>
+          </a>
+          <a href="tel:+8801960481983" class="btn-outline-olive" style="border-color: var(--brand-gold); color: var(--brand-gold);">
+            <span>Call: +880 1960-481983</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: FOUNDER QUOTE
+       ========================================================================== -->
+  <section class="founder-quote-section">
+    <div class="container">
+      <div class="quote-content-wrapper">
+        <span class="quote-icon-decor">“</span>
+        <blockquote class="founder-quote-phrase">
+          At Heaven Furniture Mart, we believe furniture is more than just function; it is a reflection of lifestyle, taste, and comfort. Every piece we create is designed to bring lasting elegance into the homes of our clients.
+        </blockquote>
+
+        <div class="founder-signature-box">
+          <strong>Abul Kalam Bhuiyan</strong>
+          <span>Managing Director, Heaven Furniture Mart</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: BRAND STORY & MILESTONES
+       ========================================================================== -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="timeline-header-block">
+        <div class="eyebrow eyebrow-dark" style="justify-content: center;">CHRONICLE OF GROWTH</div>
+        <h2 class="section-title section-title-dark" style="text-align: center;">From Chattogram, crafted with ambition.</h2>
+        <p style="color: var(--text-cream-muted); font-size: 0.95rem;">
+          A journey of bespoke furniture artistry from local studio to recognized industry standard.
+        </p>
+      </div>
+
+      <div class="timeline-track-grid">
+        <div class="timeline-node-item">
+          <div class="timeline-dot-pin"></div>
+          <div class="timeline-year-text">2020</div>
+          <p class="timeline-desc-text">Founded by Abul Kalam Bhuiyan with a vision for uncompromising custom furniture.</p>
+        </div>
+
+        <div class="timeline-node-item">
+          <div class="timeline-dot-pin"></div>
+          <div class="timeline-year-text">2021</div>
+          <p class="timeline-desc-text">Opened the flagship Agrabad showroom to showcase full custom room concepts.</p>
+        </div>
+
+        <div class="timeline-node-item">
+          <div class="timeline-dot-pin"></div>
+          <div class="timeline-year-text">2024–25</div>
+          <p class="timeline-desc-text">Exhibited signature bespoke suites at the International Furniture Fair, Chattogram.</p>
+        </div>
+
+        <div class="timeline-node-item">
+          <div class="timeline-dot-pin"></div>
+          <div class="timeline-year-text">2025</div>
+          <p class="timeline-desc-text">Became an esteemed member of the Chattogram Chamber of Commerce.</p>
+        </div>
+
+        <div class="timeline-node-item">
+          <div class="timeline-dot-pin"></div>
+          <div class="timeline-year-text">2026</div>
+          <p class="timeline-desc-text">Received nationwide BFIOA recognition for manufacturing quality & bespoke excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 10: FINAL CONVERSION CTA
+       ========================================================================== -->
+  <section class="final-cta-section" id="contact">
+    <div class="container final-cta-container">
+      <div class="eyebrow eyebrow-dark" style="justify-content: center;">START YOUR COMMISSION</div>
+      <h2 class="final-cta-title">Let's create something made for you.</h2>
+      
+      <p class="final-cta-text">
+        “Tell us what you have in mind. We'll help turn your space and ideas into furniture that feels uniquely yours.”
+      </p>
+
+      <div class="final-cta-buttons-block">
+        <button class="btn-olive btn-cream open-quote-modal" aria-label="Request a quote">
+          <span>Request a Quote →</span>
+        </button>
+
+        <div class="final-contact-pills">
+          <a href="tel:+8801960481983" class="contact-pill-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+880 1960-481983</span>
+          </a>
+          <a href="mailto:heavenfurnituremart@gmail.com" class="contact-pill-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>heavenfurnituremart@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="final-reassurance-note">
+        Free design consultation · Bespoke craftsmanship · Delivery & installation
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 11: FOOTER (SIMPLE & CLEAN)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-simple-grid">
+        
+        <!-- Left: Brand Info -->
+        <div>
+          <span class="footer-brand-heading">Heaven Furniture Mart</span>
+          <span class="footer-brand-tag">Designed. Crafted. Customized.</span>
+          <p style="font-size: 0.9rem; line-height: 1.75; color: var(--text-cream-muted); max-width: 440px;">
+            Creating bespoke solid wood furniture and tailored living atmospheres in Chattogram since 2020.
+          </p>
+        </div>
+
+        <!-- Right: Showroom & Contact Info -->
+        <div>
+          <div style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--brand-gold); margin-bottom: 0.75rem; font-weight: 700;">
+            Showroom & Studio
+          </div>
+          <div class="footer-contact-details">
+            <p>Agrabad Access Road, Chattogram, Bangladesh</p>
+            <p style="margin-top: 4px;">
+              Phone: <a href="tel:+8801960481983">+880 1960-481983</a> · 
+              Email: <a href="mailto:heavenfurnituremart@gmail.com">heavenfurnituremart@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="footer-socials-group">
+            <a href="https://facebook.com/HeavenFurnitureMart" target="_blank" rel="noopener" class="footer-social-circle" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com/heaven_furniture_ltd" target="_blank" rel="noopener" class="footer-social-circle" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://youtube.com/@HeavenFurnitureMart" target="_blank" rel="noopener" class="footer-social-circle" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#09100e"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Heaven Furniture Mart. All rights reserved.</div>
+        <div>Agrabad Access Road, Chattogram, Bangladesh</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CONVERSION UX: FLOATING CONCIERGE & SINGLE FAST QUOTE MODAL
+       ========================================================================== -->
+  <button class="floating-concierge open-quote-modal" aria-label="Start consultation">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>Request a Quote</span>
+  </button>
+
+        <!-- REAL PIECE DETAILS PHOTO GALLERY MODAL -->
+  <div class="modal-backdrop" id="productGalleryModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog" style="max-width: 860px;">
+      <div class="modal-header">
+        <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <h3 id="galleryHeaderTitle">Real Piece Gallery</h3>
+        <p id="galleryHeaderSub">Heaven Furniture Mart · Studio & Showroom Real Photos</p>
+      </div>
+
+      <div class="modal-scrollable-body" style="padding: 1.25rem 1.5rem;">
+        <!-- Clean 2x2 Real Photo Grid -->
+        <div class="real-photo-gallery-grid" id="realPhotoGalleryGrid">
+          <!-- Dynamically populated real photos -->
+        </div>
+      </div>
+
+      <div class="modal-sticky-footer">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; width: 100%; flex-wrap: wrap;">
+          <span style="font-size: 0.84rem; color: var(--text-charcoal-muted);">
+            ✓ Custom dimensions, wood stains & fabrics available for this design
+          </span>
+          <button type="button" class="btn-olive" id="galleryWhatsappBtn" style="padding: 0.85rem 2rem;">
+            <span>Inquire Model on WhatsApp →</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SINGLE UNIFIED QUOTE & CONSULTATION MODAL -->
+  <div class="modal-backdrop" id="quoteModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <h3>Request a Custom Quote</h3>
+        <p>Tell us about your space. We will prepare customized pricing & options.</p>
+      </div>
+
+      <form id="quoteForm" style="display: flex; flex-direction: column; flex: 1; min-height: 0;">
+        <div class="modal-scrollable-body">
+          <div class="form-group">
+            <label class="form-label" for="clientName">Your Name *</label>
+            <input type="text" id="clientName" class="form-control" placeholder="e.g. Tanzim Ahmed" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clientPhone">Phone / WhatsApp Number *</label>
+            <input type="tel" id="clientPhone" class="form-control" placeholder="+880 1..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Category of Interest</label>
+            <div class="chips-selector" id="roomChips">
+              <button type="button" class="chip-btn active" data-value="Living Room Sofa">Living Room</button>
+              <button type="button" class="chip-btn" data-value="Master Bedroom Bed">Master Bed</button>
+              <button type="button" class="chip-btn" data-value="Dining Suite & Chairs">Dining Suite</button>
+              <button type="button" class="chip-btn" data-value="Accent Chairs & Lounge">Chairs & Lounge</button>
+              <button type="button" class="chip-btn" data-value="Vanity & Study Suite">Vanity & Desk</button>
+              <button type="button" class="chip-btn" data-value="Full Home Bespoke">Full Home Custom</button>
+            </div>
+            <input type="hidden" id="selectedRoom" value="Living Room Sofa">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clientMessage">Tell Us About Your Space & Dimensions (Optional)</label>
+            <textarea id="clientMessage" class="form-control" rows="2" placeholder="Approx room size, preferred wood tone (Teak/Oak/Walnut), fabric..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-action" style="margin-top: 0.4rem;">
+            <span>Send Request via WhatsApp →</span>
+          </button>
+        </div>
+
+        <div class="modal-sticky-footer">
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: var(--text-charcoal-muted); width: 100%;">
+            <span>Direct Call: <a href="tel:+8801960481983" style="color: var(--walnut-brown); font-weight: 700;">+880 1960-481983</a></span>
+            <span>Agrabad Showroom</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="quote-toast" id="quoteToast">
+    ✓ Request sent! Opening WhatsApp to start direct consultation with our designer...
+  </div>
+
+  <!-- ==========================================================================
+       LIGHTWEIGHT JS ENGINE (SHOWCASE ENGINE & QUOTE CONCIERGE)
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('siteHeader');
+      const darkSections = document.querySelectorAll('.showroom-section, .timeline-section, .final-cta-section, .site-footer');
+
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+
+        let isOverDark = false;
+        darkSections.forEach(sec => {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top <= 60 && rect.bottom >= 60) {
+            isOverDark = true;
+          }
+        });
+
+        if (isOverDark && scrollY > 50) {
+          header.classList.add('dark-section');
+        } else {
+          header.classList.remove('dark-section');
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      // Mobile Drawer Navigation
+      const mobileToggle = document.getElementById('mobileToggle');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+      const toggleDrawer = () => {
+        const isOpen = mobileDrawer.classList.toggle('open');
+        mobileToggle.classList.toggle('active');
+        mobileDrawer.setAttribute('aria-hidden', !isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      };
+
+      mobileToggle.addEventListener('click', toggleDrawer);
+      mobileNavItems.forEach(item => {
+        item.addEventListener('click', () => {
+          if (mobileDrawer.classList.contains('open')) toggleDrawer();
+        });
+      });
+
+            
+      // 7 COLLECTIONS ITEMS DATA (100% REAL VERIFIED CUTOUT & WORKSHOP PHOTOS)
+      const collectionItems = [
+        {
+          category: 'COLLECTION 01 · SOLID OAK DINING & STUDY CHAIRS',
+          title: 'The Danish Solid Oak Dining & Study Chair',
+          desc: 'Curved steam-bent oak and carved mahogany backrest with tactile woven upholstery, plus ergonomic executive task chairs.',
+          imgSrc: 'images/cutout_danish_chair.png',
+          wood: 'Seasoned Chittagong Teak / White Oak',
+          fabric: 'Belgian Linen / Woven Bouclé',
+          dimensions: 'H: 82cm · W: 52cm · D: 50cm (Custom)',
+          features: ['Solid Seasoned Hardwood', 'Hand-Carved Mahogany Details', 'Steam-Bent Ergonomic Back', 'Executive Task Seating'],
+          realPhotos: [
+            'images/real_dining_chair_detail.png',
+            'images/real_terracotta_dining_chair.jpg',
+            'images/officechair.jpg',
+            'images/officechair2.jpg'
+          ]
+        },
+        {
+          category: 'COLLECTION 02 · ACCENT LOUNGE, ARMCHAIRS & SWINGS (DOLNA)',
+          title: 'The Classic French Armchair & Swings',
+          desc: 'Carved cabriole wood armchairs with vintage floral upholstery, plus hand-woven hanging egg swing chairs for serene relaxation.',
+          imgSrc: 'images/cutout_scandi_lounge.png',
+          wood: 'Solid Teak & Hand-Woven Rattan',
+          fabric: 'Imported Vintage Floral & Velvet',
+          dimensions: 'Standard & Customized Proportions',
+          features: ['Carved French Floral Armchair', 'Hand-Woven Rattan Swings', 'Gold Tufted Wingback Chairs', 'Curved Accent Barrel Chairs'],
+          realPhotos: [
+            'images/real_french_floral_armchair.jpg',
+            'images/real_rattan_swing_dolna_cream.jpg',
+            'images/real_black_yellow_swing_dolna.jpg',
+            'images/real_gold_tufted_wingbacks_pair.jpg'
+          ]
+        },
+        {
+          category: 'COLLECTION 03 · BESPOKE LIVING SINGLE SOFAS & CHAISE DIWAN',
+          title: 'The Tailored Single Living Sofa & Diwan',
+          desc: 'Plush tailored 1-seater silhouettes with high-resilience memory core, textured upholstery, and hand-carved mahogany diwan daybed.',
+          imgSrc: 'images/cutout_cream_armchair.png',
+          wood: 'Solid Mahogany & Seasoned Timber',
+          fabric: 'High-Resilience Textured Cream Linen',
+          dimensions: '1-Seater / Chaise Daybed Custom Sizing',
+          features: ['Solid Hardwood Internal Frame', 'High-Resilience Memory Core', 'Plush Ergonomic Cushioning', 'Custom Sizing & Fabric Choice'],
+          realPhotos: [
+            'images/real_cream_single_sofa.jpg',
+            'images/real_blue_gold_single_armchair.jpg',
+            'images/real_carved_diwan_chaise.jpg',
+            'images/sofasingle.jpg'
+          ]
+        },
+        {
+          category: 'COLLECTION 04 · TAILORED LIVING SOFA SUITES',
+          title: 'The Tailored Sand Linen Living Sofa',
+          desc: 'Balanced architectural silhouette with supportive high-resilience memory core, tailored oat linen upholstery, and solid timber plinth base.',
+          imgSrc: 'images/cutout_tailored_sand_sofa.png',
+          wood: 'Seasoned Hardwood & Solid Timber Plinth',
+          fabric: 'Tailored Oat Linen & High-Density Core',
+          dimensions: '3-Seater / 2-Seater / L-Shape Modular',
+          features: ['Solid Timber Tapered Plinth', 'High-Resilience Memory Core', 'Tailored Oat Linen Fabric', 'Custom 3+2+1 Configurations'],
+          realPhotos: [
+            'images/sofarealimg1.jpg',
+            'images/real_champagne_curved_3seater_sofa.jpg',
+            'images/real_champagne_royal_sofa.jpg',
+            'images/real_green_luxury_sofa_suite.jpg'
+          ]
+        },
+        {
+          category: 'COLLECTION 05 · MASTER BEDROOM BED SUITE',
+          title: 'The Royal Upholstered Master Bed',
+          desc: 'Architectural bed frame featuring fine fluted finials, plush velvet upholstered headboard, and solid seasoned timber structure built for serene rest.',
+          imgSrc: 'images/cutout_master_bed.png',
+          wood: 'Solid Seasoned Teak Frame',
+          fabric: 'Plush Royal Velvet / Bouclé',
+          dimensions: 'King (6ft x 7ft) · Queen (5ft x 7ft)',
+          features: ['Upholstered Velvet Headboard', 'Fine Fluted Wood Posts', 'Solid Seasoned Timber', 'Custom King / Queen Sizes'],
+          realPhotos: [
+            'images/bedrealimg1.jpg',
+            'images/bedealimg2.jpg',
+            'images/real_royal_grey_bed.jpg',
+            'images/real_rose_velvet_bed.jpg'
+          ]
+        },
+        {
+          category: 'COLLECTION 06 · COMPASS-LEG WALNUT DINING SUITE',
+          title: 'The Mid-Century Walnut Dining Suite',
+          desc: 'Warm solid walnut rectangular dining table with rounded softened edges, paired with 4 compass-leg ergonomic curved back dining chairs.',
+          imgSrc: 'images/cutout_walnut_dining_suite.png',
+          wood: 'Solid Seasoned American Walnut / Teak',
+          fabric: 'Tactile Woven Textured Cushioning',
+          dimensions: '4-Seater · 6-Seater · 8-Seater Custom',
+          features: ['Solid Seasoned Walnut', 'Compass-Leg Ergonomic Chairs', 'Softened Chamfer Edge Profile', 'Custom 4–8 Seater Sizing'],
+          realPhotos: [
+            'images/dinigrealimg1.jpg',
+            'images/dinigrealimg2.jpg',
+            'images/real_4seater_round_dining.jpg',
+            'images/real_6seater_glass_dining.jpg'
+          ]
+        },
+        {
+          category: 'COLLECTION 07 · ARCHITECTURAL OVAL VANITY & DRESSING SUITE',
+          title: 'The Minimalist Oval Vanity & Dressing Suite',
+          desc: 'Sculptural rounded floating console with integrated ambient vanity halo, full-length pill mirror, and tactile bouclé pedestal stool.',
+          imgSrc: 'images/cutout_oval_vanity_suite.png',
+          wood: 'High-Density Engineered & Solid Hardwood',
+          fabric: 'Tactile Bouclé Upholstered Stool',
+          dimensions: 'Custom Wardrobe & Vanity Dimensions',
+          features: ['Full-Length Oval Pill Mirror', 'Floating Soft-Curve Console', 'Bouclé Pedestal Dressing Stool', 'Integrated Ambient Backlight Halo'],
+          realPhotos: [
+            'images/dressingrealtable1.jpg',
+            'images/real_modern_study_desk_almirah.jpg',
+            'images/archive_nasirabad_vanity_wardrobe.png',
+            'images/real_mahogany_tea_table_chairs_pair.jpg'
+          ]
+        }
+      ];
+
+      let currentIndex = 0;
+
+      const posterItemCategory = document.getElementById('posterItemCategory');
+      const posterPieceTitle = document.getElementById('posterPieceTitle');
+      const posterPieceDesc = document.getElementById('posterPieceDesc');
+      const posterMainImg = document.getElementById('posterMainImg');
+      const posterFeatures = document.getElementById('posterFeatures');
+      const posterCtaBtn = document.getElementById('posterCtaBtn');
+      const posterCounterPill = document.getElementById('posterCounterPill');
+      const posterWatermark = document.getElementById('posterWatermark');
+
+      const btnPrevCollection = document.getElementById('btnPrevCollection');
+      // Gallery Modal Elements
+      const productGalleryModal = document.getElementById('productGalleryModal');
+      const galleryHeaderTitle = document.getElementById('galleryHeaderTitle');
+      const galleryHeaderSub = document.getElementById('galleryHeaderSub');
+      const realPhotoGalleryGrid = document.getElementById('realPhotoGalleryGrid');
+      const galleryWhatsappBtn = document.getElementById('galleryWhatsappBtn');
+
+      const setCollectionItem = (index) => {
+        currentIndex = (index + collectionItems.length) % collectionItems.length;
+        const item = collectionItems[currentIndex];
+
+        posterWatermark.style.opacity = '0';
+        posterMainImg.style.opacity = '0';
+        posterMainImg.style.transform = 'scale(0.96) translateY(4px)';
+
+        setTimeout(() => {
+          posterItemCategory.textContent = item.category;
+          posterPieceTitle.textContent = item.title;
+          posterPieceDesc.textContent = item.desc;
+          posterMainImg.src = item.imgSrc;
+          posterMainImg.alt = item.title + ' by Heaven Furniture Mart';
+          posterCounterPill.textContent = `0${currentIndex + 1} / 0${collectionItems.length}`;
+          posterCtaBtn.setAttribute('data-category', item.title);
+
+          posterFeatures.innerHTML = item.features.map(f => `
+            <div class="poster-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>${f}</span>
+            </div>
+          `).join('');
+
+          posterWatermark.style.opacity = '0.14';
+          posterMainImg.style.opacity = '1';
+          posterMainImg.style.transform = 'scale(1) translateY(0)';
+        }, 160);
+      };
+
+      const handlePrev = (e) => {
+        if (e) e.preventDefault();
+        setCollectionItem(currentIndex - 1);
+      };
+
+      const handleNext = (e) => {
+        if (e) e.preventDefault();
+        setCollectionItem(currentIndex + 1);
+      };
+
+      btnPrevCollection.addEventListener('click', handlePrev);
+      btnNextCollection.addEventListener('click', handleNext);
+      stageArrowPrev.addEventListener('click', handlePrev);
+      stageArrowNext.addEventListener('click', handleNext);
+
+      // Open Real Photo Gallery Modal
+      const openProductGallery = (index) => {
+        const item = collectionItems[index];
+        galleryHeaderTitle.textContent = `${item.title}`;
+        galleryHeaderSub.textContent = `Heaven Furniture Mart · Studio & Showroom Real Photos`;
+
+        realPhotoGalleryGrid.innerHTML = item.realPhotos.map((photo, i) => `
+          <div class="real-photo-card">
+            <img src="${photo}" alt="${item.title} real piece ${i+1}" loading="lazy">
+          </div>
+        `).join('');
+
+        galleryWhatsappBtn.onclick = () => {
+          const waMessage = encodeURIComponent(
+            `Hello Heaven Furniture Mart,\n\nI am interested in commissioning: ${item.title} (${item.category}).\nPlease share pricing and options for custom sizing and wood stains.\n\nThank you.`
+          );
+          window.open(`https://wa.me/8801960481983?text=${waMessage}`, '_blank');
+        };
+
+        closeAllModals();
+        productGalleryModal.classList.add('open');
+        productGalleryModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      };
+
+      // Both button and image click trigger pure gallery modal
+      posterCtaBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openProductGallery(currentIndex);
+      });
+
+      posterMainImg.addEventListener('click', () => {
+        openProductGallery(currentIndex);
+      });
+
+      // ==========================================================================
+      // UNIVERSAL MODAL SYSTEM (GALLERY & QUOTE MODALS WITH ROCK-SOLID CLOSE)
+      // ==========================================================================
+      const quoteModal = document.getElementById('quoteModal');
+      const openQuoteBtns = document.querySelectorAll('.open-quote-modal');
+      const selectedRoomInput = document.getElementById('selectedRoom');
+      const roomChips = document.querySelectorAll('#roomChips .chip-btn');
+      const quoteForm = document.getElementById('quoteForm');
+      const quoteToast = document.getElementById('quoteToast');
+
+      const closeAllModals = () => {
+        document.querySelectorAll('.modal-backdrop').forEach(modal => {
+          modal.classList.remove('open');
+          modal.setAttribute('aria-hidden', 'true');
+        });
+        document.body.style.overflow = '';
+      };
+
+      const closeModal = (modalElem) => {
+        if (!modalElem) return;
+        modalElem.classList.remove('open');
+        modalElem.setAttribute('aria-hidden', 'true');
+        if (!document.querySelector('.modal-backdrop.open')) {
+          document.body.style.overflow = '';
+        }
+      };
+
+      // Wire every close button to close its parent modal
+      document.querySelectorAll('[data-close-modal], .modal-close-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const parentModal = btn.closest('.modal-backdrop');
+          if (parentModal) {
+            closeModal(parentModal);
+          } else {
+            closeAllModals();
+          }
+        });
+      });
+
+      // Wire backdrop click to close the respective modal
+      document.querySelectorAll('.modal-backdrop').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            closeModal(modal);
+          }
+        });
+      });
+
+      // Escape key closes all open modals
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeAllModals();
+        }
+      });
+
+      const openQuoteModal = (categoryName) => {
+        closeAllModals();
+        quoteModal.classList.add('open');
+        quoteModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+
+        if (categoryName) {
+          roomChips.forEach(chip => {
+            if (categoryName.toLowerCase().includes(chip.dataset.value.toLowerCase().split(' ')[0])) {
+              chip.click();
+            }
+          });
+        }
+      };
+
+      openQuoteBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const cat = btn.getAttribute('data-category');
+          openQuoteModal(cat);
+        });
+      });
+
+      roomChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          roomChips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          selectedRoomInput.value = chip.getAttribute('data-value');
+        });
+      });
+
+      quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('clientName').value.trim();
+        const phone = document.getElementById('clientPhone').value.trim();
+        const room = selectedRoomInput.value;
+        const notes = document.getElementById('clientMessage').value.trim();
+
+        if (!name || !phone) {
+          alert('Please enter your name and phone number.');
+          return;
+        }
+
+        const waMessage = encodeURIComponent(
+          `Hello Heaven Furniture Mart,\n\nI would like to request a bespoke quote / consultation:\n• Name: ${name}\n• Phone: ${phone}\n• Area of Interest: ${room}\n${notes ? `• Details: ${notes}\n` : ''}\nThank you.`
+        );
+
+        closeQuoteModal();
+        quoteForm.reset();
+
+        quoteToast.classList.add('show');
+        setTimeout(() => quoteToast.classList.remove('show'), 5000);
+
+        setTimeout(() => {
+          window.open(`https://wa.me/8801960481983?text=${waMessage}`, '_blank');
+        }, 500);
+      });
+    });
+  </script>
+</body>
+</html>
