@@ -31,7 +31,7 @@ export default function Showroom() {
             <div className="address-sub">Convenient parking & dedicated design consultation lounge</div>
           </div>
 
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <div className="showroom-actions-row">
             <a
               href="https://maps.google.com/?q=Agrabad+Access+Road,+Chattogram,+Bangladesh"
               target="_blank"

@@ -2074,6 +2074,19 @@ h1, h2, h3, h4, .serif-title {
       opacity: 1;
     }
 
+    .showroom-actions-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .final-cta-submit-btn {
+      width: 100%;
+      margin-top: 0.35rem;
+      padding: 0.85rem 1.5rem;
+      font-size: 0.85rem;
+    }
+
     /* ==========================================================================
        FINAL CTA GRID LAYOUT (SIDE-BY-SIDE ON ALL SCREENS)
        ========================================================================== */
@@ -2110,7 +2123,7 @@ h1, h2, h3, h4, .serif-title {
       .hero-title { font-size: clamp(1.35rem, 4.2vw, 2.4rem); line-height: 1.1; margin-bottom: 0.65rem; }
       .hero-sub-copy { font-size: clamp(0.78rem, 2vw, 0.95rem); line-height: 1.5; margin-bottom: 0.85rem; }
       .hero-actions-row { flex-direction: row; width: auto; margin-bottom: 0.75rem; }
-      .hero-actions-row .btn-olive { width: auto; padding: 0.65rem 1.15rem; font-size: 0.72rem; }
+      .hero-actions-row .btn-olive { width: auto; padding: 0.58rem 1.15rem; font-size: 0.72rem; }
       .hero-micro-reassurance { font-size: 0.7rem; line-height: 1.35; }
       .hero-visual-frame { padding: clamp(0.6rem, 1.8vw, 1rem); }
       .hero-quote-caption { font-size: clamp(0.72rem, 1.8vw, 0.92rem); margin-top: 0.5rem; line-height: 1.35; }
@@ -2138,15 +2151,26 @@ h1, h2, h3, h4, .serif-title {
       .showroom-badge-overlay { top: 10px; right: 10px; padding: 6px 10px; }
       .showroom-badge-overlay small { font-size: 0.52rem; }
       .showroom-badge-overlay span { font-size: 0.78rem; }
+      .showroom-actions-row { gap: 0.65rem; }
       .livora-showcase-poster { padding: 1.25rem 1rem; }
       .poster-feature-list { grid-template-columns: 1fr; }
       .poster-stage-container { min-height: 240px; }
       .poster-hero-furniture-img { max-height: 220px; }
+      .poster-nav-btn { width: 32px; height: 32px; }
+      .poster-nav-btn svg { width: 13px; height: 13px; }
+      .stage-side-arrow-btn { width: 32px; height: 32px; }
+      .stage-side-arrow-btn svg { width: 14px; height: 14px; }
+      .poster-counter-pill { font-size: 0.7rem; padding: 3px 10px; }
+      .btn-olive, .btn-gold, .btn-cream { padding: 0.58rem 1.15rem; font-size: 0.72rem; gap: 6px; }
+      .btn-outline-olive { padding: 0.54rem 1.05rem; font-size: 0.72rem; gap: 6px; }
+      .chip-btn { padding: 4px 10px; font-size: 0.68rem; }
       .final-cta-grid-layout { grid-template-columns: 1fr; gap: 2rem; }
       .final-cta-title { font-size: clamp(1.6rem, 4.5vw, 2.3rem); line-height: 1.15; margin-bottom: 0.65rem; }
       .final-cta-text { font-size: clamp(0.85rem, 2.2vw, 1rem); line-height: 1.55; margin-bottom: 1.25rem; }
       .final-contact-pills { flex-direction: row; flex-wrap: wrap; gap: 0.75rem; width: 100%; margin-bottom: 1.25rem; }
       .contact-pill-link { width: auto; padding: 7px 14px; font-size: 0.78rem; }
+      .final-cta-submit-btn { padding: 0.65rem 1.15rem; font-size: 0.74rem; }
+      .floating-concierge { padding: 8px 14px; font-size: 0.7rem; bottom: 20px; right: 20px; }
       .footer-simple-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: clamp(0.85rem, 2.5vw, 1.5rem); }
       .watermark-heaven-title { font-size: 2.8rem; }
       .watermark-sub-mart { font-size: 0.72rem; letter-spacing: 0.22em; }
@@ -2159,7 +2183,7 @@ h1, h2, h3, h4, .serif-title {
       .hero-title { font-size: clamp(1.05rem, 4.6vw, 1.45rem); line-height: 1.12; margin-bottom: 0.35rem; }
       .hero-sub-copy { font-size: clamp(0.64rem, 2.2vw, 0.75rem); line-height: 1.4; margin-bottom: 0.6rem; }
       .hero-actions-row { flex-direction: row; width: auto; margin-bottom: 0.45rem; }
-      .hero-actions-row .btn-olive { width: auto; padding: 0.45rem 0.75rem; font-size: 0.62rem; gap: 4px; letter-spacing: 0.04em; }
+      .hero-actions-row .btn-olive { width: auto; padding: 0.42rem 0.82rem; font-size: 0.62rem; gap: 4px; letter-spacing: 0.04em; }
       .hero-actions-row .btn-olive svg { width: 11px; height: 11px; }
       .hero-micro-reassurance { font-size: 0.58rem; line-height: 1.25; gap: 4px; }
       .hero-micro-reassurance svg { width: 10px; height: 10px; }
@@ -2195,12 +2219,23 @@ h1, h2, h3, h4, .serif-title {
       .showroom-badge-overlay { top: 6px; right: 6px; padding: 3px 6px; }
       .showroom-badge-overlay small { font-size: 0.45rem; }
       .showroom-badge-overlay span { font-size: 0.62rem; }
+      .showroom-actions-row { display: flex; flex-direction: row; gap: 6px; flex-wrap: wrap; }
+      .showroom-actions-row .btn-olive,
+      .showroom-actions-row .btn-outline-olive { width: auto; }
+      .poster-nav-btn { width: 26px; height: 26px; }
+      .poster-nav-btn svg { width: 11px; height: 11px; }
+      .stage-side-arrow-btn { width: 26px; height: 26px; }
+      .stage-side-arrow-btn svg { width: 12px; height: 12px; }
+      .poster-counter-pill { font-size: 0.58rem; padding: 2px 6px; }
       .final-cta-grid-layout { grid-template-columns: 1fr; gap: 1.5rem; }
       .final-cta-title { font-size: clamp(1.3rem, 5vw, 1.65rem); line-height: 1.15; margin-bottom: 0.45rem; }
       .final-cta-text { font-size: 0.78rem; line-height: 1.45; margin-bottom: 0.85rem; }
       .final-contact-pills { flex-direction: column; gap: 6px; margin-bottom: 0.85rem; }
-      .contact-pill-link { font-size: 0.72rem; padding: 6px 12px; }
+      .contact-pill-link { font-size: 0.68rem; padding: 5px 10px; gap: 5px; }
       .final-reassurance-note { font-size: 0.65rem; }
+      .chip-btn { padding: 3px 8px !important; font-size: 0.58rem !important; }
+      .final-cta-submit-btn { width: 100% !important; padding: 0.52rem 0.85rem !important; font-size: 0.68rem !important; gap: 5px; }
+      .mobile-drawer .btn-olive { width: 100% !important; padding: 0.62rem 1rem !important; font-size: 0.72rem !important; }
       .footer-simple-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 8px; }
       .footer-brand-heading { font-size: 0.95rem; }
       .footer-brand-tag { font-size: 0.62rem; }
@@ -2208,11 +2243,13 @@ h1, h2, h3, h4, .serif-title {
       .footer-contact-details { font-size: 0.62rem; }
       .footer-social-circle { width: 28px; height: 28px; }
       .container { padding-left: 0.85rem; padding-right: 0.85rem; }
-      .btn-olive, .btn-gold { width: 100%; }
-      .hero-actions-row .btn-olive { width: auto; }
-      .btn-outline-olive { width: 100%; justify-content: center; }
+      .btn-olive, .btn-gold, .btn-cream { width: auto; padding: 0.42rem 0.82rem; font-size: 0.62rem; gap: 4px; letter-spacing: 0.04em; }
+      .btn-olive svg, .btn-gold svg, .btn-cream svg { width: 11px; height: 11px; }
+      .btn-outline-olive { width: auto; justify-content: center; padding: 0.4rem 0.78rem; font-size: 0.62rem; gap: 4px; letter-spacing: 0.04em; }
+      .btn-outline-olive svg { width: 11px; height: 11px; }
       .floating-concierge span { display: none; }
-      .floating-concierge { padding: 12px; border-radius: 50%; bottom: 18px; right: 18px; }
+      .floating-concierge { padding: 8px; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; bottom: 16px; right: 16px; }
+      .floating-concierge svg { width: 13px; height: 13px; }
     }
 
     /* ==========================================================================

@@ -207,8 +207,8 @@ export default function FinalCTA({ onSubmitSuccess }) {
 
               <button
                 type="submit"
-                className="btn-olive btn-cream"
-                style={{ width: '100%', marginTop: '0.35rem', padding: '0.85rem' }}
+                className="btn-olive btn-cream final-cta-submit-btn"
+                style={{ width: '100%', marginTop: '0.35rem' }}
               >
                 <span>Send Request via WhatsApp →</span>
               </button>
