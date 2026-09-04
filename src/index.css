@@ -2123,7 +2123,8 @@ h1, h2, h3, h4, .serif-title {
       .hero-title { font-size: clamp(1.35rem, 4.2vw, 2.4rem); line-height: 1.1; margin-bottom: 0.65rem; }
       .hero-sub-copy { font-size: clamp(0.78rem, 2vw, 0.95rem); line-height: 1.5; margin-bottom: 0.85rem; }
       .hero-actions-row { flex-direction: row; width: auto; margin-bottom: 0.75rem; }
-      .hero-actions-row .btn-olive { width: auto; padding: 0.58rem 1.15rem; font-size: 0.72rem; }
+      .hero-actions-row .btn-olive { width: auto; padding: 0.45rem 0.92rem; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.04em; gap: 5px; }
+      .hero-actions-row .btn-olive svg { width: 12px; height: 12px; }
       .hero-micro-reassurance { font-size: 0.7rem; line-height: 1.35; }
       .hero-visual-frame { padding: clamp(0.6rem, 1.8vw, 1rem); }
       .hero-quote-caption { font-size: clamp(0.72rem, 1.8vw, 0.92rem); margin-top: 0.5rem; line-height: 1.35; }
@@ -2183,8 +2184,8 @@ h1, h2, h3, h4, .serif-title {
       .hero-title { font-size: clamp(1.05rem, 4.6vw, 1.45rem); line-height: 1.12; margin-bottom: 0.35rem; }
       .hero-sub-copy { font-size: clamp(0.64rem, 2.2vw, 0.75rem); line-height: 1.4; margin-bottom: 0.6rem; }
       .hero-actions-row { flex-direction: row; width: auto; margin-bottom: 0.45rem; }
-      .hero-actions-row .btn-olive { width: auto; padding: 0.42rem 0.82rem; font-size: 0.62rem; gap: 4px; letter-spacing: 0.04em; }
-      .hero-actions-row .btn-olive svg { width: 11px; height: 11px; }
+      .hero-actions-row .btn-olive { width: auto; padding: 0.32rem 0.68rem; font-size: 0.55rem; font-weight: 600; gap: 4px; letter-spacing: 0.03em; box-shadow: 0 3px 10px var(--brand-gold-glow); }
+      .hero-actions-row .btn-olive svg { width: 10px; height: 10px; }
       .hero-micro-reassurance { font-size: 0.58rem; line-height: 1.25; gap: 4px; }
       .hero-micro-reassurance svg { width: 10px; height: 10px; }
       .hero-visual-frame { min-width: 0; padding: 6px; border-radius: 4px; }
