@@ -82,78 +82,54 @@ export default function FinalCTA({ onSubmitSuccess }) {
           {/* Right Column: Direct Embedded Quote Form */}
           <Reveal
             delay={2}
-            style={{
-              background: 'rgba(38, 42, 33, 0.72)',
-              backdropFilter: 'blur(16px)',
-              WebkitBackdropFilter: 'blur(16px)',
-              border: '1px solid rgba(204, 164, 104, 0.22)',
-              borderRadius: '20px',
-              padding: 'clamp(1.5rem, 2.5vw, 2rem)',
-              boxShadow: '0 16px 36px rgba(0, 0, 0, 0.22)',
-            }}
+            className="final-cta-form-card"
           >
-            <div style={{ marginBottom: '1.15rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.45rem', fontWeight: 500, color: 'var(--bg-cream)', marginBottom: '0.25rem' }}>
+            <div className="final-form-header">
+              <h3 className="final-form-title">
                 Request a Custom Quote
               </h3>
-              <p style={{ fontSize: '0.82rem', color: 'var(--text-cream-muted)', lineHeight: 1.5 }}>
+              <p className="final-form-subtitle">
                 Tell us about your space. We will prepare customized pricing & options.
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+            <form onSubmit={handleSubmit} className="final-quote-form">
               <div className="form-group" style={{ marginBottom: 0 }}>
-                <label className="form-label" htmlFor="clientName" style={{ color: 'rgba(232, 225, 213, 0.85)', fontSize: '0.72rem', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 500 }}>
+                <label className="final-form-label form-label" htmlFor="clientName">
                   Your Name *
                 </label>
                 <input
                   type="text"
                   id="clientName"
-                  className="form-control"
+                  className="final-form-input form-control"
                   placeholder="e.g. Tanzim Ahmed"
                   required
                   aria-required="true"
                   autoComplete="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  style={{
-                    background: 'rgba(26, 29, 23, 0.55)',
-                    border: '1px solid rgba(232, 225, 213, 0.18)',
-                    color: 'var(--bg-cream)',
-                    borderRadius: '8px',
-                    fontSize: '0.88rem',
-                    padding: '0.65rem 0.85rem',
-                  }}
                 />
               </div>
 
               <div className="form-group" style={{ marginBottom: 0 }}>
-                <label className="form-label" htmlFor="clientPhone" style={{ color: 'rgba(232, 225, 213, 0.85)', fontSize: '0.72rem', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 500 }}>
+                <label className="final-form-label form-label" htmlFor="clientPhone">
                   Phone / WhatsApp Number *
                 </label>
                 <input
                   type="tel"
                   id="clientPhone"
-                  className="form-control"
+                  className="final-form-input form-control"
                   placeholder="+880 1..."
                   required
                   aria-required="true"
                   autoComplete="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  style={{
-                    background: 'rgba(26, 29, 23, 0.55)',
-                    border: '1px solid rgba(232, 225, 213, 0.18)',
-                    color: 'var(--bg-cream)',
-                    borderRadius: '8px',
-                    fontSize: '0.88rem',
-                    padding: '0.65rem 0.85rem',
-                  }}
                 />
               </div>
 
               <div className="form-group" style={{ marginBottom: 0 }}>
-                <label className="form-label" style={{ color: 'rgba(232, 225, 213, 0.85)', fontSize: '0.72rem', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 500 }}>
+                <label className="final-form-label form-label">
                   Category of Interest
                 </label>
                 <div className="chips-selector" role="group" aria-label="Category of Interest" style={{ gap: '6px' }}>
@@ -163,18 +139,9 @@ export default function FinalCTA({ onSubmitSuccess }) {
                       <button
                         key={chip.value}
                         type="button"
-                        className={`chip-btn ${isActive ? 'active' : ''}`}
+                        className={`chip-btn final-chip-btn ${isActive ? 'active' : ''}`}
                         aria-pressed={isActive}
                         onClick={() => setSelectedRoom(chip.value)}
-                        style={{
-                          fontSize: '0.72rem',
-                          padding: '5px 11px',
-                          borderRadius: '9999px',
-                          background: isActive ? 'rgba(204, 164, 104, 0.22)' : 'rgba(232, 225, 213, 0.06)',
-                          border: isActive ? '1px solid var(--brand-gold)' : '1px solid rgba(232, 225, 213, 0.15)',
-                          color: isActive ? 'var(--bg-cream)' : 'rgba(232, 225, 213, 0.75)',
-                          transition: 'all 0.2s ease',
-                        }}
                       >
                         {chip.label}
                       </button>
@@ -184,24 +151,16 @@ export default function FinalCTA({ onSubmitSuccess }) {
               </div>
 
               <div className="form-group" style={{ marginBottom: 0 }}>
-                <label className="form-label" htmlFor="clientMessage" style={{ color: 'rgba(232, 225, 213, 0.85)', fontSize: '0.72rem', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '4px', fontWeight: 500 }}>
+                <label className="final-form-label form-label" htmlFor="clientMessage">
                   Tell Us About Your Space & Dimensions (Optional)
                 </label>
                 <textarea
                   id="clientMessage"
-                  className="form-control"
+                  className="final-form-input form-control"
                   rows="2"
                   placeholder="Approx room size, preferred wood tone (Teak/Oak/Walnut), fabric..."
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  style={{
-                    background: 'rgba(26, 29, 23, 0.55)',
-                    border: '1px solid rgba(232, 225, 213, 0.18)',
-                    color: 'var(--bg-cream)',
-                    borderRadius: '8px',
-                    fontSize: '0.88rem',
-                    padding: '0.65rem 0.85rem',
-                  }}
                 ></textarea>
               </div>
 
@@ -213,9 +172,9 @@ export default function FinalCTA({ onSubmitSuccess }) {
                 <span>Send Request via WhatsApp →</span>
               </button>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.76rem', color: 'var(--text-cream-muted)', marginTop: '0.2rem' }}>
+              <div className="final-form-footer-meta">
                 <span>
-                  Direct Call: <a href="tel:+8801960481983" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>+880 1960-481983</a>
+                  Direct Call: <a href="tel:+8801960481983">+880 1960-481983</a>
                 </span>
                 <span>Agrabad Showroom</span>
               </div>
