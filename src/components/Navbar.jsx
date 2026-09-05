@@ -13,8 +13,11 @@ export default function Navbar({ isMobileOpen, onToggleMobile }) {
         ? header.getBoundingClientRect().top + header.getBoundingClientRect().height / 2
         : 45;
 
+      const isMobile = window.innerWidth <= 768;
       const darkElements = document.querySelectorAll(
-        '.showroom-section, .timeline-section, .final-cta-section, .site-footer'
+        isMobile
+          ? '.showroom-section, .timeline-section, .site-footer'
+          : '.showroom-section, .timeline-section, .final-cta-section, .site-footer'
       );
 
       let overDark = false;

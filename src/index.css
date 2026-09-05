@@ -2274,48 +2274,92 @@ h1, h2, h3, h4, .serif-title {
       .btn-outline-olive { padding: 0.54rem 1.05rem; font-size: 0.72rem; gap: 6px; }
       .chip-btn { padding: 4px 10px; font-size: 0.68rem; }
       .final-cta-grid-layout { grid-template-columns: 1fr; gap: 2rem; }
-      .final-cta-title { font-size: clamp(1.6rem, 4.5vw, 2.3rem); line-height: 1.15; margin-bottom: 0.65rem; }
-      .final-cta-text { font-size: clamp(0.85rem, 2.2vw, 1rem); line-height: 1.55; margin-bottom: 1.25rem; }
-      .final-contact-pills { flex-direction: row; flex-wrap: wrap; gap: 0.75rem; width: 100%; margin-bottom: 1.25rem; }
-      .contact-pill-link { width: auto; padding: 7px 14px; font-size: 0.78rem; }
-      .final-cta-submit-btn { padding: 0.65rem 1.15rem; font-size: 0.74rem; }
 
-      /* Mobile Form Card: Base Offwhite / Cream theme */
-      .final-cta-form-card {
-        background: var(--bg-cream-card) !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-        border: 1px solid var(--border-taupe) !important;
-        border-radius: 16px !important;
-        padding: clamp(1.25rem, 3.5vw, 1.75rem) !important;
-        box-shadow: 0 14px 32px rgba(52, 52, 47, 0.12) !important;
+      /* Mobile Final CTA Section: Base Offwhite / Cream background */
+      .final-cta-section {
+        background-color: var(--bg-cream) !important;
+        color: var(--text-charcoal) !important;
+        border-top: 1px solid var(--border-taupe);
       }
-      .final-form-title {
+      .final-cta-section::before {
+        display: none !important;
+      }
+      .final-cta-section .eyebrow-dark {
+        color: var(--walnut-brown) !important;
+      }
+      .final-cta-section .eyebrow-dark::before {
+        background-color: var(--walnut-brown) !important;
+      }
+      .final-cta-title {
+        font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+        line-height: 1.15;
+        margin-bottom: 0.65rem;
         color: var(--text-charcoal) !important;
       }
-      .final-form-subtitle {
+      .final-cta-text {
+        font-size: clamp(0.85rem, 2.2vw, 1rem);
+        line-height: 1.55;
+        margin-bottom: 1.25rem;
         color: var(--text-charcoal-muted) !important;
       }
+      .final-contact-pills {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+      .contact-pill-link {
+        width: auto;
+        padding: 7px 14px;
+        font-size: 0.78rem;
+        color: var(--deep-olive) !important;
+        background: var(--bg-cream-card) !important;
+        border: 1px solid var(--border-taupe) !important;
+      }
+      .contact-pill-link svg {
+        color: var(--walnut-brown) !important;
+      }
+      .final-reassurance-note {
+        color: var(--text-charcoal-muted) !important;
+      }
+      .final-cta-submit-btn { padding: 0.65rem 1.15rem; font-size: 0.74rem; }
+
+      /* Mobile Form Card: Retains Luxury Dark Card */
+      .final-cta-form-card {
+        background: var(--deep-olive-dark) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: 1px solid rgba(204, 164, 104, 0.3) !important;
+        border-radius: 16px !important;
+        padding: clamp(1.25rem, 3.5vw, 1.75rem) !important;
+        box-shadow: 0 16px 36px rgba(52, 52, 47, 0.16) !important;
+      }
+      .final-form-title {
+        color: var(--bg-cream) !important;
+      }
+      .final-form-subtitle {
+        color: var(--text-cream-muted) !important;
+      }
       .final-form-label {
-        color: var(--text-charcoal) !important;
+        color: rgba(232, 225, 213, 0.85) !important;
       }
       .final-form-input {
-        background: #FFFFFF !important;
-        border: 1px solid var(--border-taupe) !important;
-        color: var(--text-charcoal) !important;
+        background: rgba(26, 29, 23, 0.6) !important;
+        border: 1px solid rgba(232, 225, 213, 0.2) !important;
+        color: var(--bg-cream) !important;
       }
       .final-form-input:focus {
         border-color: var(--brand-gold) !important;
         box-shadow: 0 0 0 2px var(--brand-gold-glow) !important;
       }
       .final-form-input::placeholder {
-        color: var(--text-charcoal-muted) !important;
-        opacity: 0.7 !important;
+        color: rgba(232, 225, 213, 0.45) !important;
       }
       .final-chip-btn {
-        background: var(--bg-cream) !important;
-        border: 1px solid var(--border-taupe) !important;
-        color: var(--text-charcoal) !important;
+        background: rgba(232, 225, 213, 0.08) !important;
+        border: 1px solid rgba(232, 225, 213, 0.18) !important;
+        color: rgba(232, 225, 213, 0.8) !important;
       }
       .final-chip-btn.active, .final-chip-btn:hover {
         background: var(--brand-gold) !important;
@@ -2324,10 +2368,10 @@ h1, h2, h3, h4, .serif-title {
         box-shadow: 0 4px 12px var(--brand-gold-glow) !important;
       }
       .final-form-footer-meta {
-        color: var(--text-charcoal-muted) !important;
+        color: var(--text-cream-muted) !important;
       }
       .final-form-footer-meta a {
-        color: var(--walnut-brown) !important;
+        color: var(--brand-gold) !important;
       }
 
       .floating-concierge { padding: 8px 14px; font-size: 0.7rem; bottom: 20px; right: 20px; }
@@ -2387,19 +2431,52 @@ h1, h2, h3, h4, .serif-title {
       .stage-side-arrow-btn { width: 26px; height: 26px; }
       .stage-side-arrow-btn svg { width: 12px; height: 12px; }
       .poster-counter-pill { font-size: 0.58rem; padding: 2px 6px; }
+
       .final-cta-grid-layout { grid-template-columns: 1fr; gap: 1.5rem; }
-      .final-cta-title { font-size: clamp(1.3rem, 5vw, 1.65rem); line-height: 1.15; margin-bottom: 0.45rem; }
-      .final-cta-text { font-size: 0.78rem; line-height: 1.45; margin-bottom: 0.85rem; }
-      .final-contact-pills { flex-direction: column; gap: 6px; margin-bottom: 0.85rem; }
-      .contact-pill-link { font-size: 0.68rem; padding: 5px 10px; gap: 5px; }
-      .final-reassurance-note { font-size: 0.65rem; }
+      .final-cta-section {
+        background-color: var(--bg-cream) !important;
+        color: var(--text-charcoal) !important;
+      }
+      .final-cta-title {
+        font-size: clamp(1.3rem, 5vw, 1.65rem);
+        line-height: 1.15;
+        margin-bottom: 0.45rem;
+        color: var(--text-charcoal) !important;
+      }
+      .final-cta-text {
+        font-size: 0.78rem;
+        line-height: 1.45;
+        margin-bottom: 0.85rem;
+        color: var(--text-charcoal-muted) !important;
+      }
+      .final-contact-pills {
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 0.85rem;
+      }
+      .contact-pill-link {
+        font-size: 0.68rem;
+        padding: 5px 10px;
+        gap: 5px;
+        color: var(--deep-olive) !important;
+        background: var(--bg-cream-card) !important;
+        border: 1px solid var(--border-taupe) !important;
+      }
+      .contact-pill-link svg {
+        color: var(--walnut-brown) !important;
+      }
+      .final-reassurance-note {
+        font-size: 0.65rem;
+        color: var(--text-charcoal-muted) !important;
+      }
       .chip-btn { padding: 3px 8px !important; font-size: 0.58rem !important; }
       .final-cta-submit-btn { width: 100% !important; padding: 0.52rem 0.85rem !important; font-size: 0.68rem !important; gap: 5px; }
 
-      /* Mobile Small Screen Form Card adjustments */
+      /* Mobile Small Screen Form Card adjustments (Luxury Dark Card) */
       .final-cta-form-card {
         padding: 1.15rem 0.95rem !important;
         border-radius: 12px !important;
+        background: var(--deep-olive-dark) !important;
       }
       .final-form-header {
         margin-bottom: 0.85rem !important;
@@ -2407,10 +2484,12 @@ h1, h2, h3, h4, .serif-title {
       .final-form-title {
         font-size: 1.15rem !important;
         margin-bottom: 2px !important;
+        color: var(--bg-cream) !important;
       }
       .final-form-subtitle {
         font-size: 0.72rem !important;
         line-height: 1.4 !important;
+        color: var(--text-cream-muted) !important;
       }
       .final-quote-form {
         gap: 0.65rem !important;
@@ -2418,11 +2497,15 @@ h1, h2, h3, h4, .serif-title {
       .final-form-label {
         font-size: 0.62rem !important;
         margin-bottom: 3px !important;
+        color: rgba(232, 225, 213, 0.85) !important;
       }
       .final-form-input {
         font-size: 0.78rem !important;
         padding: 0.5rem 0.7rem !important;
         border-radius: 6px !important;
+        background: rgba(26, 29, 23, 0.6) !important;
+        border: 1px solid rgba(232, 225, 213, 0.2) !important;
+        color: var(--bg-cream) !important;
       }
       .final-chip-btn {
         font-size: 0.62rem !important;
@@ -2431,6 +2514,7 @@ h1, h2, h3, h4, .serif-title {
       .final-form-footer-meta {
         font-size: 0.68rem !important;
         margin-top: 0.1rem !important;
+        color: var(--text-cream-muted) !important;
       }
       .mobile-drawer .btn-olive { width: 100% !important; padding: 0.62rem 1rem !important; font-size: 0.72rem !important; }
       .footer-simple-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 8px; }
